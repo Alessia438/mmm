@@ -1,0 +1,39 @@
+/* Container holding the image and the text */
+.container {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 25%; 
+  right: 35%; 
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0.2);
+  color: white;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.text-block:hover, .text-block:active {font-size: 110%; transition: 0.50s;}
+
+#new {
+  display: block;
+  margin-top: 4em;
+  margin-bottom: 0em;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 1px;
+  border-color: black;
+}
+
+#new2 {
+  display: block;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 0.5px;
+  border-color: gray;
+}
