@@ -1,3 +1,12 @@
+
+body {
+  font-family: mrs-eaves-xl-serif, serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
 /* Container holding the image and the text */
 .container {
   position: relative;
