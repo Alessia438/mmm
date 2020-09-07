@@ -3,6 +3,16 @@ body {
   font-family: 'Proza Libre', sans-serif;
 }
 
+/* tables cells separated equally */
+.issues tr td {
+  width:33.3333%;
+}
+
+.articles tr td {
+  width:33.3333%;
+}
+
+
 /* Container holding the image and the text */
 .container {
   position: relative;
