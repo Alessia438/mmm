@@ -3,7 +3,8 @@
 <!-- non so se abbia senso aggiungere un tag che identifichi il covid (e la SARS)
 tag che ho aggiunto: <p class="publicationTime">, <span class="event">, span class="artwork"
 ho messo le gallerie come span class="entity" e gli art show e le mostre come <span class="event">
-sono un po' indecisa su che class span mettere per "Art Basel" che è sia un progetto, che una mostra, che un evento, che un entity in quando possiede diritti sulle immagini. per ora ho messo span class="entity" -->
+sono un po' indecisa su che class span mettere per "Art Basel" che è sia un progetto, che una mostra, che un evento, che un entity in quando possiede diritti sulle immagini. per ora ho messo span class="entity"
+gli id che ho messo alle section sono inutili, in effetti potrei toglierli tenendo comunque la divisione in sections -->
 
 <html>
 	<head>
@@ -21,15 +22,17 @@ sono un po' indecisa su che class span mettere per "Art Basel" che è sia un pro
 	</head>
 
 	<body>
-		<h1>In the Midst of COVID-19, Chinese Galleries Adapt and Persevere</h1>
-		<p class="byline"><span class="person">Sonia Xie</span></p> <!-- CHE E' BYLINE??? -->
-		<p class="publicationDate">mar 17, 2020</p>
-		<p class="publicationTime">11:23am</p>
+		<section>
+			<h1>In the Midst of COVID-19, Chinese Galleries Adapt and Persevere</h1>
+			<p class="byline"><span class="person">Sonia Xie</span></p> <!-- CHE E' BYLINE??? -->
+			<p class="publicationDate"><time datetime="2020-03-17">mar 17, 2020</time></p>
+			<p class="publicationTime">11:23am</p>
 
-		<figure>
-			<img src="imgIssue2/art1-img1.jpg">
-			<figcaption>Installation view of "Tianzhuo Chen: Backstage Boys" and "Lu Yang: Debut" at <span class="entity">BANK</span>, <time datetime="2019">2019</time>. Courtesy of <span class="entity">BANK</span>.</figcaption>
-		</figure>
+			<figure>
+				<img src="imgIssue2/art1-img1.jpg">
+				<figcaption>Installation view of "Tianzhuo Chen: Backstage Boys" and "Lu Yang: Debut" at <span class="entity">BANK</span>, <time datetime="2019">2019</time>. Courtesy of <span class="entity">BANK</span>.</figcaption>
+			</figure>
+		</section>
 
 		<section id="Introduction">
 			<p>Since the viral outbreak of COVID-19 in <span class="place">China</span> in <time datetime="2020-01">January</time>, the art world has come to a sudden halt. With major museums, fairs, and galleries canceling events and exhibitions all over the world, the industry as a whole is experiencing the strain of the global pandemic. However, it is easy to forget how the gallery ecosystem in <span class="place">China</span> felt the first, immediate impacts of COVID-19.</p>
