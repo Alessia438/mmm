@@ -1,46 +1,159 @@
 <!DOCTYPE>
 <html>
-ENVIRONMENTAL ART: PROPOSALS FOR A FUTURE WORLD
+	<head>
+		<title>ENVIRONMENTAL ART: PROPOSALS FOR A FUTURE WORLD</title>
+		
+		<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+		<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
 
-By Carol Becker
-February 29, 2016 12:16pm
- 
+		<meta name="DC.title" lang="en" content="ENVIRONMENTAL ART: PROPOSALS FOR A FUTURE WORLD"/>
+		<meta name="DC.creator" content="Carol Becker"/>
+		<meta name="DCTERMS.issued" scheme="DCTERMS.W3CDTF" content="2016-02-29" />
+		<meta name="DC.publisher" content="Art in America" />
+		<meta name="DC.identifier" scheme="DCTERMS.URI" content="hhttps://www.artnews.com/art-in-america/features/environmental-art-proposals-for-a-future-world-63143/"/>
+		<meta name="DC.format" scheme="DCTERMS.IMT" content="text/html" />
+		<meta name="DC.type" scheme="DCTERMS.DCMIType" content="Text" />
+	</head>
+
+	<body> 
+
+		<h1>ENVIRONMENTAL ART: PROPOSALS FOR A FUTURE WORLD</h1>
+
+		<p class="byline">By <span class="person">Carol Becker</span></p>
+		<p class="publicationDate">February 29, 2016</p>
+		<p class="publicationTime">12:16 pm</p>
 
 
+		<figure>  
+			<img src="issue3/imgIssue3/art3-img1.jpg"> 
+		</figure>
+		<style>
+		* {
+		  box-sizing: border-box;
+		}
+
+		body {
+		  margin: 0;
+		  font-family: Arial;
+		}
+
+		/* The grid: Four equal columns that floats next to each other */
+		.column {
+		  float: left;
+		  width: 25%;
+		  padding: 10px;
+		}
+
+		/* Style the images inside the grid */
+		.column img {
+		  opacity: 0.8; 
+		  cursor: pointer; 
+		}
+
+		.column img:hover {
+		  opacity: 1;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+
+		/* The expanding image container */
+		.container {
+		  position: relative;
+		  display: none;
+		}
+
+		/* Expanding image text */
+		#imgtext {
+		  position: absolute;
+		  bottom: 15px;
+		  left: 15px;
+		  color: white;
+		  font-size: 20px;
+		}
+
+		/* Closable button inside the expanded image */
+		.closebtn {
+		  position: absolute;
+		  top: 10px;
+		  right: 15px;
+		  color: white;
+		  font-size: 35px;
+		  cursor: pointer;
+		}
+
+		</style>
+		<div class="row">
+  			<div class="column">
+    			<img src="/Users/arielesantello/Documents/GitHub/mmm.github.io/issue3/imgIssue3/art3-img1.jpg" alt="Blu" style="width:100%" onclick="myFunction(this);">
+  			</div>
+ 			 <div class="column">
+    			<img src="/Users/arielesantello/Documents/GitHub/mmm.github.io/issue3/imgIssue3/art3-img2.jpg" alt="Building" style="width:100%" onclick="myFunction(this);">
+  			</div>
+  			<div class="column">
+    			<img src="/Users/arielesantello/Documents/GitHub/mmm.github.io/issue3/imgIssue3/art3-img3.jpg" alt="Rainbow" style="width:100%" onclick="myFunction(this);">
+  			</div>
+  			<div class="column">
+   				<img src="/Users/arielesantello/Documents/GitHub/mmm.github.io/issue3/imgIssue3/art3-img4.jpeg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+  			</div>
+		</div>
+
+		<div class="container">
+		  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+		  <img id="expandedImg" style="width:100%">
+		  <div id="imgtext"></div>
+		</div>
+
+		<script>
+		function myFunction(imgs) {
+		  var expandImg = document.getElementById("expandedImg");
+		  var imgText = document.getElementById("imgtext");
+		  expandImg.src = imgs.src;
+		  imgText.innerHTML = imgs.alt;
+		  expandImg.parentElement.style.display = "block";
+		}
+		</script>
+		
 
 VIEW GALLERY
 4 Images
- Daan Roosegaarde—artist, designer and futurist—opened his 2015 talk at the World Economic Forum in Davos, Switzerland, with a film of undulating waterways, vibrating grasses and a stormy, painterly Dutch Golden Age sky. He talked about growing up in Nieuwkoop, Netherlands, and how that memory is still powerfully at the center of his understanding of nature, beauty, himself and his work. But lest we romanticize the scenes before us, he quickly made a factual point. Since one-fourth of the Netherlands is below sea level and 60 percent is susceptible to flooding, what we were seeing was an aquatic engineering wonder, made possible by dikes, dams, wind-driven water pumps (i.e., windmills), canals and floodgates. Technology has controlled Holland’s rivers and kept the sea at bay, thus allowing agriculture and commerce to flourish.
 
-For Waterlicht, presented at several European locations last year, Roosegaarde projects blue LED light into urban spaces at night to create a vaporous layer of “water”—a virtual sea at the level the ocean would be were it not restrained. Of course the work is also a cautionary allusion to the height—usually well over human heads—that the water could reach with climate change. (In each case, the level of the projection is determined by the local water board.) Nature, at least in the Netherlands, is a glorious but highly regulated construct.
 
-Context, place, point of origin and their relationship to technology are all crucial to the “techno poetics” of design, as Roosegaarde calls his approach. Dune, an interactive installation, was the first Roosegaarde piece I encountered live. In a darkened room off the main hall of the World Economic Forum Conference Center, various dignitaries waved their arms over a fanciful garden of flexible plastic reeds with white LED tips. They were demonstrating what they had just learned from Roosegaarde: human interaction could trigger the reeds to light up the room. 
+ <p><span class="person"><b>Dan Roosegaarde</b></span>—artist, designer and futurist—opened his <time datetime="2015">2015</time> talk at the <span class="entity">World Economic Forum</span> in <span class="place">Davos</span>, <span class="place">Switzerland</span>, with a film of undulating waterways, vibrating grasses and a stormy, painterly <!--cosa essere tu coso -->Dutch Golden Age sky. He talked about growing up in <span class="place">Nieuwkoop</span>, <span class="place">Netherlands</span>, and how that memory is still powerfully at the center of his understanding of nature, beauty, himself and his work. But lest we romanticize the scenes before us, he quickly made a factual point. Since one-fourth of the <span class="place">Netherlands</span> is below sea level and 60 percent is susceptible to flooding, what we were seeing was an aquatic engineering wonder, made possible by dikes, dams, wind-driven water pumps (i.e., windmills), canals and floodgates. Technology has controlled Holland’s rivers and kept the sea at bay, thus allowing agriculture and commerce to flourish.</p>
 
-This piece was perfectly suited to such a relatively confined setting, but most of Roosegaarde’s work is site-specific to large public spaces—rural and urban—including parks, countryside, walkways, plazas, airports, train stations and highways. At Amsterdam’s main railroad terminal, his Rainbow Station (2014-15), using liquid crystal lenses developed in collaboration with astronomers at the University of Leiden, separates light into a spectrum and beams it across the tracks, where it takes the shape of the roughly 150-foot-wide station roof. Throughout 2015, the “rainbow” appeared nightly at sundown, at an undisclosed moment, to mark both UNESCO’s International Year of Light and the 125th anniversary of the Amsterdam Central Station. 
+<p>For <span class="artwork"><i>Waterlicht</i></span>, presented at several European locations last year, <span class="person">Roosegaarde</span> projects blue LED light into urban spaces at night to create a vaporous layer of “water”—a virtual sea at the level the ocean would be were it not restrained. Of course the work is also a cautionary allusion to the height—usually well over human heads—that the water could reach with climate change. (In each case, the level of the projection is determined by the local water board.) Nature, at least in the <span class="place">Netherlands</span>, is a glorious but highly regulated construct.</p>
 
-In conversation, Roosegaarde cites many influences for his work: Buckminster Fuller, Marshall McLuhan, Leonardo da Vinci, Rem Koolhaas and Salomon van Ruysdael. Clearly an environmental artist, Roosegaarde is also profoundly interested in the Land art movement. He is particularly familiar with the earthwork Broken Circle and Spiral Hill, which Robert Smithson sited in a working sand quarry in Emmen, Netherlands, in 1971.
+<p>Context, place, point of origin and their relationship to technology are all crucial to the “techno poetics” of design, as <span class="person">Roosegaarde</span> calls his approach. <i>Dune</i>, an interactive installation, was the first <span class="person">Roosegaarde</span> piece I encountered live. In a darkened room off the main hall of the <span class="entity">World Economic Forum Conference</span> Center, various dignitaries waved their arms over a fanciful garden of flexible plastic reeds with white LED tips. They were demonstrating what they had just learned from <span class="person">Roosegaarde</span>: human interaction could trigger the reeds to light up the room.</p> 
 
-In the 1970s, Smithson, Walter De Maria, Michael Heizer and others strove to create a new purity of form. Needing to escape what Smithson called the “cultural confinement” of galleries and museums, which these artists felt “neutralized” art-making, they sought something bigger, more dramatic and more immediate. 1 But their work, which came to define site-specificity, was never really public art. It has always been remote and difficult to see, with the exception of such relocated pieces as Heizer’s 2012 Levitated Mass (a boulder positioned threateningly above a troughlike concrete walkway at the Los Angeles County Museum of Art). In general, Land art—in works like James Turrell’s Roden Crater (1974-ongoing)—is not just placed in the landscape, it is of the landscape. Smithson, for one, did not want to create embellishment. He sought to “recycle” land that had been abandoned or negatively altered, and to transform it into art.2
+<p>This piece was perfectly suited to such a relatively confined setting, but most of <span class="person">Roosegaarde</span>’s work is site-specific to large public spaces—rural and urban—including parks, countryside, walkways, plazas, airports, train stations and highways. At <span class="place">Amsterdam</span>’s main railroad terminal, his <i>Rainbow Station</i> (<time datetime="2014">2014</time>-15), using liquid crystal lenses developed in collaboration with astronomers at the <span class="entity">University of Leiden</span>, separates light into a spectrum and beams it across the tracks, where it takes the shape of the roughly 150-foot-wide station roof. Throughout <time datetime="2015">2015</time>, the “rainbow” appeared nightly at sundown, at an undisclosed moment, to mark both <span class="entity">UNESCO</span>’s International Year of Light and the 125th anniversary of the <span class="place">Amsterdam</span> Central Station.</p> 
 
-Operating outside of the gallery system that these artists challenged, Roosegaarde has adopted many of their goals and methodologies—such as the use of industrial materials, the emphasis on process, the collaboration with construction companies and large-scale industries, and the direct allusion to nature. But Roosegaarde has transcended Smithson’s caveat that “utility and art don’t mix” 3 and has demonstrated that good art, like good design, can be extraordinarily beautiful while also addressing real-world problems. “I’m looking for a balance between poetry and pragmatism,” he says, “which I think should be the role of the designer/artist.” 4
+<p>In conversation, <span class="person">Roosegaarde</span> cites many influences for his work: Buckminster Fuller, Marshall McLuhan, Leonardo da Vinci, Rem Koolhaas and Salomon van Ruysdael. Clearly an environmental artist, <span class="person">Roosegaarde</span> is also profoundly interested in the Land art movement. He is particularly familiar with the earthwork <i>Broken Circle and Spiral Hill</i>, which <span class="person">Robert Smithson sited in a working sand quarry in Emmen, Netherlands, in 1971.</p>
 
-In a time when we bemoan the impact of humans on the natural world, Roosegaarde’s interventions literally illuminate both the rural and the urban landscape. Many of them exemplify sustainable design, seeking not only to reduce the amount of energy used but also to generate their own energy. He imagines how, like jellyfish, they might light themselves—thus “doing more, instead of less.” 5 
+<p>In the 1970s, <span class="person">Smithson</span>, <span class="person">Walter De Maria</span>, <span class="person">Michael Heizer</span> and others strove to create a new purity of form. Needing to escape what <span class="person">Smithson</span> called the “cultural confinement” of galleries and museums, which these artists felt “neutralized” art-making, they sought something bigger, more dramatic and more immediate. 1 But their work, which came to define site-specificity, was never really public art. It has always been remote and difficult to see, with the exception of such relocated pieces as <span class="person">Heizer</span>’s <time datetime="2015">2012</time> <span class="artwork"><i>Levitated Mass</i></span> (a boulder positioned threateningly above a troughlike concrete walkway at the <span class="entity">Los Angeles County Museum of Art</span>). In general, Land art—in works like <span class="person">James Turrell</span>’s <span class="artwork"><i>Roden Crater</i></span> (1974-ongoing)—is not just placed <i>in</i> the landscape, it is <i>of</i> the landscape. <span class="person">Smithson</span>, for one, did not want to create embellishment. He sought to “recycle” land that had been abandoned or negatively altered, and to transform it into art.2</p>
 
-Early in the development of such ideas, Roosegaarde and his studio designed Sustainable Dance Floor (2008). The dancers’ movements, activating embedded sensors, lit up a multicolor platform in the once-popular Club Watt in Rotterdam. In Nuenen, Netherlands, where van Gogh lived for a time, Van Gogh-Roosegaarde Bicycle Path accumulates solar energy during the day to energize photovoltaic stones lodged in concrete, which then pattern the pathway with glowing swirls reminiscent of Starry Night. This very popular evening bike route opened in November 2014, pre-launching last year’s commemoration of Van Gogh’s death 125 years ago.
+<p>Operating outside of the gallery system that these artists challenged, <span class="person">Roosegaarde</span> has adopted many of their goals and methodologies—such as the use of industrial materials, the emphasis on process, the collaboration with construction companies and large-scale industries, and the direct allusion to nature. But <span class="person">Roosegaarde</span> has transcended <span class="person">Smithson</span>’s caveat that <q>“utility and art don’t mix”</q> 3 and has demonstrated that good art, like good design, can be extraordinarily beautiful while also addressing real-world problems. <q>“I’m looking for a balance between poetry and pragmatism,”</q> he says, <q>“which I think <i>should</i> be the role of the designer/artist.”</q> 4</p>
 
-Roosegaarde’s Smart Highway was named Best Future Concept at the Dutch Design Awards in 2012. Working with the Heijmans infrastructure development company in the Dutch province of Noord-Brabant on the Belgian border, Roosegaarde—inspired in part by Yves Klein, who made his own paint 6 —created a photoluminescent mixture that lights up 150 miles of highway lane lines after dark. The paint is charged by sunlight during the day and by headlights at night (not unlike the glow-in-the-dark stars in children’s bedrooms). The lines radiate green—the color that is easiest to see after sundown—and remain visible for eight hours. Their glow is so bright it could eliminate the need for streetlights.
+<p>In a time when we bemoan the impact of humans on the natural world, <span class="person">Roosegaarde</span>’s interventions literally illuminate both the rural and the urban landscape. Many of them exemplify sustainable design, seeking not only to reduce the amount of energy used but also to generate their own energy. He imagines how, like jellyfish, they might light themselves—thus <q>“doing more, instead of less.”</q> 5</p> 
 
-Roosegaarde’s multipart “Smog Free Project”—perhaps his most complex and utopian undertaking to date—opened in Rotterdam on Sept. 4, 2015. A white, 23-foot-high, solar-powered vacuum device, resembling an elegantly slatted vertical beehive with panels that open from the top, sucks in pollutants to such a degree that the air in the surrounding area becomes measurably cleaner and healthier to breathe. Roosegaard’s machine, the Smog Free Tower, which uses as much energy as a household vacuum cleaner, is dramatic, playful and somewhat extravagant. It is clearly not, in itself, a solution to the world’s pollution problems, but it is an emissary of hope, allowing us to imagine that we could someday remedy the global crisis through an audacious and confident use of technology. 
+Early in the development of such ideas, <span class="person">Roosegaarde</span> and his studio designed <span class="artwork"><i>Sustainable Dance Floor</i></span> (<time datetime="2008">2008</time>). The dancers’ movements, activating embedded sensors, lit up a multicolor platform in the once-popular <span class="place">Club Watt</span> in <span class="place">Rotterdam</span>. In <span class="place">Nuenen</span>, <span class="place">Netherlands</span>, where <span class="person">Van Gogh</span> lived for a time, <!-- work o artwork'?--><span class="work"><i>Van Gogh-Roosegaarde Bicycle Path</i></span> accumulates solar energy during the day to energize photovoltaic stones lodged in concrete, which then pattern the pathway with glowing swirls reminiscent of  <span class="artwork"><i>Starry Night</i></span>. This very popular evening bike route opened in November <time datetime="2014">2014</time>, pre-launching last year’s commemoration of <span class="person">Van Gogh</span>’s death 125 years ago.</p>
 
-Many of Roosegaarde’s supporters were in attendance at the opening of the “Smog Free Project”: the mayor of Rotterdam, officials from the Port of Rotterdam, art- and business-world collaborators, and personal friends—all interested in environmental concerns; the intersection of art, design and technology; and the future of the city as a center for innovation. Present, too, was a Studio Roosegaarde jewelry artist who was turning the black soot we breathe every day into rings and cufflinks—another component of Roosegaarde’s innovative project. The pollutants sucked into the Smog Free Tower are harvested and then compressed to form miniature cubes, which are placed in a setting, trapped in clean air and sealed in acrylic. The sale of these objects (at around $285 each) has allowed Roosegaarde to fund the concept without relying on big business branding. With each purchase, customers buy the world 35,000 cubic feet of clean air. Crowdsourcing launched and now sustains the Smog Free Project, and Roosegaarde hopes it will also help to create a movement in support of cleaner air. The Smog Free Tower will travel around the world.
+<p><span class="person">Roosegaarde</span>’s <i>Smart Highway</i> was named Best Future Concept at the <span class="event">Dutch Design Awards</span> in <time datetime="2012">2012</time>. Working with the <span class="entity">Heijmans infrastructure development company</span> in the Dutch province of <span class="place">Noord-Brabant</span> on the Belgian border, <span class="person">Roosegaarde</span>—inspired in part by <span class="person">Yves Klein</span>, who made his own paint 6 —created a photoluminescent mixture that lights up 150 miles of highway lane lines after dark. The paint is charged by sunlight during the day and by headlights at night (not unlike the glow-in-the-dark stars in children’s bedrooms). The lines radiate green—the color that is easiest to see after sundown—and remain visible for eight hours. Their glow is so bright it could eliminate the need for streetlights.</p>
 
-Roosegaarde is an “infiltrator,” he says, “a hippie with a business plan.” 7  His goal is to bring the potential of the future to the present. As Smithson once wrote, “What the artist seeks is coherence and order—not ‘truth,’ correct statements, or proofs. He seeks the fiction that reality will sooner or later imitate.” 8
+<p><span class="person">Roosegaarde</span>’s multipart <b>“Smog Free Project</b>”—perhaps his most complex and utopian undertaking to date—opened in Rotterdam on <time datetime="2015-09-04">Sept. 4, 2015</time>. A white, 23-foot-high, solar-powered vacuum device, resembling an elegantly slatted vertical beehive with panels that open from the top, sucks in pollutants to such a degree that the air in the surrounding area becomes measurably cleaner and healthier to breathe. Roosegaard’s machine, the <span class="work"><i>Smog Free Tower</i></span>, which uses as much energy as a household vacuum cleaner, is dramatic, playful and somewhat extravagant. It is clearly not, in itself, a solution to the world’s pollution problems, but it is an emissary of hope, allowing us to imagine that we could someday remedy the global crisis through an audacious and confident use of technology.</p> 
 
-Roosegaarde’s “Smog Free Project” encourages us to ask: How do we become aware of the dirt we are inhaling every day? How can we clean the air and make it breathable? What is to be learned from nature? Can we turn dross into gold, coal into diamonds, soot into something elegant and crystalline? The questions are both literal and metaphoric, and they demand our engagement. Quoting Marshall McLuhan, Roosegaarde reminds us, “There are no passengers on the Spaceship Earth. We are all crew.” 9
+<p>Many of <span class="person">Roosegaarde</span>’s supporters were in attendance at the opening of the <span class="work">“Smog Free Project”</span>: the mayor of <span class="place">Rotterdam</span>, officials from the <span class="place">Port of Rotterdam</span>, art- and business-world collaborators, and personal friends—all interested in environmental concerns; the intersection of art, design and technology; and the future of the city as a center for innovation. Present, too, was a Studio Roosegaarde jewelry artist who was turning the black soot we breathe every day into rings and cufflinks—another component of <span class="person">Roosegaarde</span>’s innovative project. The pollutants sucked into the <span class="work">Smog Free Tower</span> are harvested and then compressed to form miniature cubes, which are placed in a setting, trapped in clean air and sealed in acrylic. The sale of these objects (at around $285 each) has allowed <span class="person">Roosegaarde</span> to fund the concept without relying on big business branding. With each purchase, customers buy the world 35,000 cubic feet of clean air. Crowdsourcing launched and now sustains the <span class="work">Smog Free Project</span>, and <span class="person">Roosegaarde</span> hopes it will also help to create a movement in support of cleaner air. The <span class="work">Smog Free Tower</span> will travel around the world.</p>
 
-For change to occur, humans need to desire what does not yet exist. There could scarcely be a better strategy to achieve this than enabling us to breathe clean air—something simple and primal that reminds us everyday what has been lost, what might be done to reclaim it, and how the imaginative use of technology in concert with the making of art could be central to such a transformation.
+<p><span class="person">Roosegaarde</span> is an “infiltrator,” he says, “a hippie with a business plan.” 7  His goal is to bring the potential of the future to the present. As Smithson once wrote, “What the artist seeks is coherence and order—not ‘truth,’ correct statements, or proofs. He seeks the fiction that reality will sooner or later imitate.” 8</p>
 
-CAROL BECKER is a professor and dean of faculty at the Columbia University School of the Arts, New York. 
+<p><span class="person">Roosegaarde</span>’s <span class="work">“Smog Free Project”</span> encourages us to ask: How do we become aware of the dirt we are inhaling every day? How can we clean the air and make it breathable? What is to be learned from nature? Can we turn dross into gold, coal into diamonds, soot into something elegant and crystalline? The questions are both literal and metaphoric, and they demand our engagement. Quoting Marshall McLuhan, <span class="person">Roosegaarde</span> reminds us, “There are no passengers on the Spaceship Earth. We are all crew.” 9</p>
+
+<p>For change to occur, humans need to desire what does not yet exist. There could scarcely be a better strategy to achieve this than enabling us to breathe clean air—something simple and primal that reminds us everyday what has been lost, what might be done to reclaim it, and how the imaginative use of technology in concert with the making of art could be central to such a transformation.
+
+CAROL BECKER is a professor and dean of faculty at the Columbia University School of the Arts, New York.</p> 
 
 Endnotes
 1. Robert Smithson, Robert Smithson: The Collected Writings, ed. Jack Flam, Berkeley, University of California Press, 1996, p. 154.
@@ -49,15 +162,16 @@ Endnotes
 
 3. Ibid., p. 49.
 
-4. Quoted in Diane Mehta, “Designer Daan Roosegaarde on Highways, Jellyfish, and Clients Who Say ‘Yes, But,’” forbes.com, May 16, 2013.
+4. Quoted in Diane Mehta, “Designer <span class="person">Daan Roosegaarde</span> on Highways, Jellyfish, and Clients Who Say ‘Yes, But,’” forbes.com, May 16, 2013.
 
 5. “Sustainable Dance Floor,” project description, studioroosegaarde.net.
 
-6. Daan Roosegaarde in conversation with the author, Studio Roosegaarde, Rotterdam, Netherlands, Sept. 3, 2015.
+6. <span class="person">Daan Roosegaarde</span> in conversation with the author, Studio Roosegaarde, Rotterdam, Netherlands, Sept. 3, 2015.
 
 7. Quoted in Mehta.
 
 8. Smithson, p. 91.
 
-9. Daan Roosegaarde in conversation with the author. McLuhan made this remark in 1964 in response to a somewhat similar statement by Buckminster Fuller one year earlier. See Encyclopedia of World Environmental History, ed. S. Krech III, J.R. McNeill and C. Merchant, New York and London, Routledge, 2004, vol. 1, p. 356.
+9. <span class="person">Daan Roosegaarde</span> in conversation with the author. McLuhan made this remark in 1964 in response to a somewhat similar statement by Buckminster Fuller one year earlier. See Encyclopedia of World Environmental History, ed. S. Krech III, J.R. McNeill and C. Merchant, New York and London, Routledge, 2004, vol. 1, p. 356.
+		</body>
 </html>
