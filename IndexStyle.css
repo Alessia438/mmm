@@ -13,9 +13,15 @@ body {
 }
 
 
+.row {
+  width: 100%;
+  margin: auto;
+}
+
 /* Container holding the image and the text */
 .container {
   position: relative;
+  display: inline-block;
 }
 
 /* Bottom right text */
