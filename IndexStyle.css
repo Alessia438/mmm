@@ -92,3 +92,9 @@ body {
   border-width: 0.5px;
   border-color: gray;
 }
+
+footer {
+  text-align: center;
+  margin-left: 25%;
+  color: grey;
+}
