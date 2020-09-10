@@ -13,9 +13,49 @@ body {
 }
 
 
+/* divs di indexx.html */
+
+.row {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* for centering 3 blocks in the center */
+  /* justify-content: space-between;  for large space in between */
+}
+
+.block {
+  width: 30%;
+  margin: 1%;
+  position: relative;
+  text-align: center;
+}
+
+.t-block {
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0.2);
+  color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.t-block:hover {font-size: 110%; transition: 0.50s;}
+
+
+
+
+
+
+
+
+
+
+
 /* Container holding the image and the text */
 .container {
   position: relative;
+  display: inline-block;
 }
 
 /* Bottom right text */
