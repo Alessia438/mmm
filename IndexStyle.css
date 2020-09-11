@@ -95,6 +95,6 @@ body {
 
 footer {
   text-align: justify;
-  margin-left: 25%;
-  background-color: grey;
+  padding: 1em;
+  background-color: #d3d3d3;
 }
