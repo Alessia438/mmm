@@ -48,14 +48,8 @@ body {
   margin: 1%;
 }
 
-.presentation img {
-  width: 150px;
-  height: 150px;
+.presentation-text {
   position: absolute;
-  display: block;
-  top: 50px;
-  left: 50px;
-  border-radius: 50%;
 }
 
 
