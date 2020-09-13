@@ -93,8 +93,13 @@ body {
   border-color: gray;
 }
 
-footer {
+footer { 
+
   text-align: justify;
   padding: 1em;
-  background-color: #d3d3d3;
+  background-color: #262626;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
 }
