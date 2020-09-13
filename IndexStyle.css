@@ -48,16 +48,14 @@ body {
   margin: 1%;
 }
 
-.presentation:before {
-  content: "";
-  background: transparent url(red-for-home.jpg) scroll no-repeat 0 0;
-  background-size: cover;
+.presentation img {
   width: 150px;
   height: 150px;
   position: absolute;
   display: block;
   top: 50px;
   left: 50px;
+  border-radius: 50%;
 }
 
 
