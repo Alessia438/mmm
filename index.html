@@ -7,12 +7,83 @@
 	</head>
 	<body>
 		<h1>Art&amp;Life</h1>
+
+
+
+
+		<style>
+		.topnav {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #e6e6e6;
+			position: sticky; <!--perchè non viene stickyyy-->
+		}
+
+		.topnav a {
+			float: left;
+
+		}
+
+		.topnav  a {
+			display: block;
+			color: black;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			
+		}
+
+		.topnav a:hover {
+			background-color: #a6a6a6;
+			color: black;
+		}
+		
+		.topnav a.active {
+			background-color: #1a1a1a;
+			color: white;
+		}
+
+		.topnav a {
+			border-right: 1px solid #bbb;
+		}
+
+
+		.topnav .icon {  
+			display: none;
+		}
+
+		@media screen and (max-width: 500px) {
+  			.topnav a {
+    		float: none;
+    		display: block;
+  		}
+		}
+		
+		
+
+		</style>
+
 		<div class="topnav">
   			<a class="active" href="index.html">Home</a>
   			<a href=" ">Disclaimer</a>
   			<a href=" ">Documentation</a>
   			<a href=" ">About</a>
+  			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 		</div>
+
+		<script>
+		function myFunction() {
+  			var x = document.getElementById("myTopnav");
+  			if (x.className === "topnav") {
+    			x.className += " responsive";
+  			} else {
+    			x.className = "topnav";
+  			}
+		}
+		</script>
 
 		<hr id="new">
 		<h2>Issues</h2>
