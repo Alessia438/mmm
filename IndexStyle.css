@@ -107,8 +107,8 @@ footer {
 
   text-align: justify;
   padding: 1em;
+  margin:0
   background-color: #262626;
- 
   width: 100%;
   color: white;
 }
