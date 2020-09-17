@@ -104,12 +104,11 @@ body {
 }
 
 footer { 
-
   text-align: justify;
   padding: 1em;
   margin: 0 auto;
-  margin-left:0em
   background: rgba(38, 38, 38);
-  width: 100%;
+  margin-left:0em
   color: white;
+  width: 100%;
 }
