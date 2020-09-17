@@ -103,7 +103,7 @@ body {
   border-color: gray;
 }
 
-footer { 
+.footer { 
   text-align: justify;
   padding: 1em;
   background: rgba(38, 38, 38);
