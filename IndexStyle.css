@@ -107,9 +107,11 @@ footer {
 
   text-align: justify;
   padding: 1em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  margin-left: 0;
+  margin-right: 0;
   background-color: #262626;
-  left: 0;
-  bottom: 0;
   width: 100%;
   color: white;
 }
