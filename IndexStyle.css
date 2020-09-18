@@ -3,17 +3,7 @@ body {
   font-family: 'Proza Libre', sans-serif;
 }
 
-/* tables cells separated equally */
-.issues tr td {
-  width:33.3333%;
-}
-
-.articles tr td {
-  width:33.3333%;
-}
-
-
-/* divs di indexx.html */
+/* styling divs of index.html*/
 
 .row {
   width: 100%;
@@ -53,36 +43,6 @@ body {
   transform: translate(5%, -60%);
 }
 
-
-
-
-
-
-
-
-
-
-/* Container holding the image and the text */
-.container {
-  position: relative;
-  display: inline-block;
-}
-
-/* Bottom right text */
-.text-block {
-  position: absolute;
-  bottom: 25%; 
-  right: 35%; 
-  background: rgb(0,0,0);
-  background: rgba(0,0,0,0.2);
-  color: white;
-  text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.text-block:hover, .text-block:active {font-size: 110%; transition: 0.50s;}
-
 #new {
   display: block;
   margin-top: 4em;
@@ -114,3 +74,38 @@ body {
   margin-left: 0em;
   margin-right: 0em;
 }
+
+
+
+
+/* tables cells separated equally: non servono più
+.issues tr td {
+  width:33.3333%;
+}
+
+.articles tr td {
+  width:33.3333%;
+}
+
+Container holding the image and the text: non servono più 
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+Bottom right text
+.text-block {
+  position: absolute;
+  bottom: 25%; 
+  right: 35%; 
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0.2);
+  color: white;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.text-block:hover, .text-block:active {font-size: 110%; transition: 0.50s;}
+
+*/
