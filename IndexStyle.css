@@ -1,6 +1,11 @@
 
 body {
   font-family: 'Proza Libre', sans-serif;
+  margin: 0;
+}
+
+a, p, img, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
+  margin: 0.3em;
 }
 
 /* styling divs of index.html*/
@@ -68,7 +73,6 @@ body {
   padding: 1em;
   background: rgba(38, 38, 38);
   color: white;
-  width: 100%;
   margin-top: 0em;
   margin-bottom: 0em;
   margin-left: 0em;
