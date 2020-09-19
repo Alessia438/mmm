@@ -96,6 +96,11 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
     width:370px;
     height:225px;
   }
+
+  .issueTable{
+    width:380px; 
+    height:380px;
+  }
 }
 
 
