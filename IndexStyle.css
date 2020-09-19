@@ -76,7 +76,7 @@ a, p, img, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 /* adattamento immagini*/
 
-@media only screen and (min-width: 701px){
+
   .land{
     width: 100%;
     float: left;
@@ -95,30 +95,26 @@ a, p, img, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
     width:370px;
     height:225px;
   }
-}
+
 
 /* 
 @media only screen and (max-width: 700px){
-  .land{
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-
-  .cutPortrait{
-
-  }
-}
-
-@media only screen and (max-width: 500px){
-  .land{
-    width: 100%;
-  }
-
-  .cutPortrait{
-    
-  }
+  .presentation {
+  position: relative;
+  width: 99%;
+  margin: 1%;
 }
 */
+
+@media only screen and (max-width: 500px){
+  .block {
+  width: 99%;
+  margin: 1%;
+  position: relative;
+  text-align: center;
+}
+}
+
 
 .footer { 
   text-align: justify;
