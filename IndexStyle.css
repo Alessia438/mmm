@@ -76,10 +76,11 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 /* adattamento immagini*/
 
-
+@media only screen and (min-width: 701px){
   .land{
     width: 100%;
     float: left;
+    padding-bottom: 28px;
   }
 
   .land img{
@@ -95,6 +96,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
     width:370px;
     height:225px;
   }
+}
 
 
 /* 
@@ -104,7 +106,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   width: 99%;
   margin: 1%;
 }
-*/
+
 
 @media only screen and (max-width: 500px){
   .block {
@@ -114,7 +116,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   text-align: center;
 }
 }
-
+*/
 
 .footer { 
   text-align: justify;
