@@ -49,6 +49,11 @@ a, p, img, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   margin-right: 0.3em;
 }
 
+.presentation img{
+   border-radius: 50%; 
+   width: 50%;
+}
+
 #new {
   display: block;
   margin-top: 4em;
@@ -90,8 +95,8 @@ a, p, img, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
     width:370px;
     height:225px;
   }
-
 }
+
 /* 
 @media only screen and (max-width: 700px){
   .land{
