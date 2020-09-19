@@ -76,7 +76,7 @@ a, p, img, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 /* adattamento immagini*/
 
-
+@media only screen and (min-width: 701px){
   .land{
     width: 100%;
     float: left;
@@ -84,6 +84,7 @@ a, p, img, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
   .land img{
     width: 100%
+    padding-bottom: 20px;
   }
 
   .cutPortrait img{
@@ -95,6 +96,7 @@ a, p, img, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
     width:370px;
     height:225px;
   }
+}
 
 
 /* 
@@ -104,7 +106,7 @@ a, p, img, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   width: 99%;
   margin: 1%;
 }
-*/
+
 
 @media only screen and (max-width: 500px){
   .block {
@@ -114,7 +116,7 @@ a, p, img, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   text-align: center;
 }
 }
-
+*/
 
 .footer { 
   text-align: justify;
