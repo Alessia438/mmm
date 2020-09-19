@@ -46,7 +46,7 @@ a, p, img, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 .presentation-text {
   position: absolute;
   transform: translate(5%, -70%);
-  margin-right: 0.4em;
+  margin-right: 0.8em;
 }
 
 .presentation img{
