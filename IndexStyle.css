@@ -69,6 +69,44 @@ a, p, img, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   border-color: gray;
 }
 
+/* adattamento immagini*/
+
+@media only screen and (min-width: 701px){
+  .land{
+    width: "600";
+    height: "400";
+    float: left;
+    width: 33.3%;
+  }
+
+  .cutPortrait{
+    width: "600";
+    height: "400";
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .land{
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+
+  .cutPortrait{
+
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .land{
+    width: 100%;
+  }
+
+  .cutPortrait{
+    
+  }
+}
+
 .footer { 
   text-align: justify;
   padding: 1em;
