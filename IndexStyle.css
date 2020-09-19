@@ -80,7 +80,7 @@ a, p, img, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   .land{
     width: 100%;
     float: left;
-    padding-bottom: 90px;
+    padding-bottom: 30px;
   }
 
   .land img{
