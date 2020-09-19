@@ -78,14 +78,15 @@ a, p, img, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
   .land img{
     width: 100%
-    width: "600";
-    height: "240";
   }
 
   .cutPortrait{
-    width: "600";
-    height: "400";
-    overflow: hidden;
+    object-fit: contain;
+  }
+
+  .cutPortrait img{
+    width:200px;
+    height:400px
   }
 }
 /* 
