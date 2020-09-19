@@ -82,8 +82,7 @@ a, p, img, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
   .cutPortrait img{
     object-fit: cover;
-    width: "400";
-    height: "240";
+    width: 100%
   }
 
 }
