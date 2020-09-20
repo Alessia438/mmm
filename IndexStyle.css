@@ -4,7 +4,7 @@ body {
   margin: 0;
 }
 
-a, p, img, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
+a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   margin: 0.3em;
 }
 
@@ -27,7 +27,7 @@ a, p, img, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 .t-block {
   background: rgb(0,0,0);
-  background: rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.4);
   color: white;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -45,8 +45,13 @@ a, p, img, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 .presentation-text {
   position: absolute;
-  transform: translate(5%, -60%);
+  transform: translate(5%, -70%);
   margin-right: 0.3em;
+}
+
+.presentation img{
+   border-radius: 50%; 
+   width: 50%;
 }
 
 #new {
@@ -68,6 +73,55 @@ a, p, img, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   border-width: 0.5px;
   border-color: gray;
 }
+
+/* adattamento immagini*/
+
+@media only screen and (min-width: 701px){
+  .land{
+    width: 100%;
+    float: left;
+    padding-bottom: 28px;
+  }
+
+  .land img{
+    width: 100%
+  }
+
+  .cutPortrait img{
+    object-fit: cover;
+    width: 100%
+  }
+
+  .artTable img{
+    width:370px;
+    height:225px;
+  }
+
+  .issueTable img{
+    width:380px; 
+    height:380px;
+  }
+}
+
+
+/* 
+@media only screen and (max-width: 700px){
+  .presentation {
+  position: relative;
+  width: 99%;
+  margin: 1%;
+}
+
+
+@media only screen and (max-width: 500px){
+  .block {
+  width: 99%;
+  margin: 1%;
+  position: relative;
+  text-align: center;
+}
+}
+*/
 
 .footer { 
   text-align: justify;
