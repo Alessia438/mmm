@@ -4,7 +4,7 @@ body {
   margin: 0;
 }
 
-, p, , footer, h1, h2, h3, h4, h5, h6, hr, br {
+a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   margin: 0.3em;
 }
 
