@@ -140,13 +140,15 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 	display: block;
     width:100%; 
     height:auto;
+    overflow: hidden;
 	}
 
 	.issueTable img{
 	display: block;
     width:99%; 
-    max-height:300px;
+    max-height:350px;
     margin-bottom: 50px;
+    overflow: hidden;
     }
 }
 
