@@ -84,7 +84,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   }
 
   .land img{
-    width: 100%
+    width: 100%;
   }
 
   .cutPortrait img{
@@ -147,6 +147,14 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 	  margin-right: 0em;
 	}
 
+	.land{
+  }
+
+  .land img{
+    object-fit: cover;
+    width: 100%;
+  }
+
 	.artTable img{
 	display: block;
     width:99%; 
@@ -163,7 +171,6 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
     max-height:350px;
     margin-bottom: 50px;
     margin-top: 4em;
-    margin-bottom: 0em;
     margin-left: 0em;
     margin-right: 0em;
     }
