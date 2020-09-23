@@ -121,8 +121,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   	.row {
 	 width: 100%;
 	 margin: 0 auto;
-	 float: none;
-     display: block;
+     display: flex;
 	}
 
   	.block {
