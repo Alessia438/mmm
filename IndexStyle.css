@@ -135,11 +135,13 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 	}
 
 	.artTable img{
+	display: block;
   	width:250px;
   	height:170px;
 	}
 
 	.issueTable img{
+	display: block;
     width:250px; 
     height:250px;
     }
