@@ -139,8 +139,11 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 	.artTable img{
 	display: block;
     width:99%; 
-    height:auto;
-    overflow: hidden;
+    max-height:350px;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
 	}
 
 	.issueTable img{
@@ -148,7 +151,10 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
     width:99%; 
     max-height:350px;
     margin-bottom: 50px;
-    overflow: hidden;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
     }
 }
 
