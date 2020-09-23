@@ -132,7 +132,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 	.presentation {
   	width: 100%;
-  	position: relative;
+  	position: center;
   	text-align: center;
 	}
 
@@ -144,8 +144,8 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 	.issueTable img{
 	display: block;
-    width:400px; 
-    height:400px;
+    width:250px; 
+    height:250px;
     margin-bottom: 50px;
     }
 }
