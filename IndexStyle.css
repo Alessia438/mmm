@@ -12,7 +12,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 .row {
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   justify-content: center; /* for centering 3 blocks in the center */
   /* justify-content: space-between;  for large space in between */
@@ -58,8 +58,8 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   display: block;
   margin-top: 4em;
   margin-bottom: 0em;
-  margin-left: 0em;
-  margin-right: 0em;
+  margin-left: auto;
+  margin-right: auto;
   border-width: 1px;
   border-color: black;
 }
@@ -68,8 +68,8 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   display: block;
   margin-top: 0em;
   margin-bottom: 0em;
-  margin-left: 0em;
-  margin-right: 0em;
+  margin-left: auto;
+  margin-right: auto;
   border-width: 0.5px;
   border-color: gray;
 }
@@ -120,9 +120,9 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
   	.row {
 	 width: 100%;
-	 margin: 0 auto;
-	 float: none;
-     display: block;
+   float: none;
+   margin: 0em;
+   display: block;
 	}
 
   	.block {
