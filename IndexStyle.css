@@ -117,19 +117,18 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 @media only screen and (max-width: 500px){
   .block {
-  width: 99%;
-  margin: 1%;
+  width: 100%;
   position: relative;
   text-align: center;
 }
   .artTable img{
-  width:370px;
-  height:225px;
+  width:250px;
+  height:170px;
 }
 
   .issueTable img{
-    width:380px; 
-    height:380px;
+    width:250px; 
+    height:250px;
 }
 }
 
