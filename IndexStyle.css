@@ -123,6 +123,11 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 	text-align: center;
 	}
 
+	.presentation {
+  	position: relative;
+  	width: 100%;
+	}
+
 	.artTable img{
   	width:250px;
   	height:170px;
