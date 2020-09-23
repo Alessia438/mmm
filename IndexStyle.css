@@ -18,6 +18,13 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   /* justify-content: space-between;  for large space in between */
 }
 
+.block {
+  width: 30%;
+  margin: 1%;
+  position: relative;
+  text-align: center;
+}
+
 .t-block {
   background: rgb(0,0,0);
   background: rgba(0,0,0,0.4);
@@ -87,13 +94,6 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
   @media only screen and (min-width: 701px){
 
-  	.block {
-  width: 30%;
-  margin: 1%;
-  position: relative;
-  text-align: center;
-}
-
   .artTable img{
     width:370px;
     height:225px;
@@ -115,7 +115,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 }
 */
 
-  @media only screen and (max-width: 500px){
+  @media screen and (max-width: 500px){
 
   	.block {
  	width: 100%;
