@@ -140,7 +140,11 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 	.presentation-text {
   	vertical-align: middle;
   	text-align: justify;
-  	transform: translate(0%, -80%);
+  	transform: translate(0%, -120%);
+	}
+
+	.presentation-text h1{
+		text-align: center;
 	}
 
 	.artTable img{
