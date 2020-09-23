@@ -138,8 +138,13 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 	}
 
 	.presentation-text {
-  	text-align: left;
   	vertical-align: middle;
+  	text-align: justify;
+	  padding: 1em;
+	  margin-top: 0em;
+	  margin-bottom: 0em;
+	  margin-left: 0em;
+	  margin-right: 0em;
 	}
 
 	.artTable img{
