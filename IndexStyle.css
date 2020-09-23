@@ -84,12 +84,12 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   }
 
   .land img{
-    width: 100%
+    width: 100%;
   }
 
   .cutPortrait img{
     object-fit: cover;
-    width: 100%
+    width: 100%;
   }
 
 /*  @media only screen and (min-width: 701px){ */
@@ -140,6 +140,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 	.presentation-text {
   	vertical-align: middle;
   	text-align: justify;
+  	transform: translate(-5%, -80%);
 	}
 
 	.artTable img{
