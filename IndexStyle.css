@@ -115,17 +115,19 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 }
 */
 
+
   @media screen and (max-width: 500px){
 
   	.row {
-  	width: 100%;
-  	margin: 0 auto;
+	 width: 100%;
+	 margin: 0 auto;
+     display: block;
+     justify-content: center;
 	}
 
   	.block {
  	width: 100%;
 	display: block;
-	text-align: center;
 	}
 
 	.presentation {
