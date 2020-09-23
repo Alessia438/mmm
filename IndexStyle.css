@@ -77,6 +77,12 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 /* adattamento immagini*/
 
 
+  .land{
+    width: 100%;
+    float: left;
+    padding-bottom: 28px;
+  }
+
   .land img{
     width: 100%
   }
@@ -86,7 +92,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
     width: 100%
   }
 
-  @media only screen and (min-width: 701px){
+/*  @media only screen and (min-width: 701px){ */
 
   .artTable img{
     width:370px;
@@ -97,7 +103,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
     width:380px; 
     height:380px;
   }
-}
+/*}*/
 
 
 /* 
