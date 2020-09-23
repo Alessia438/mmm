@@ -119,14 +119,14 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   @media screen and (max-width: 650px){
 
   	.row {
-	 width: 100%;
-	 margin: 0 auto;
-	 float: none;
+	   width: 100%;
+	   margin: 0 auto;
+	   float: none;
      display: block;
 	}
 
   	.block {
- 	width: 100%;
+ 	   width: 100%;
 	}
 
 	.presentation {
@@ -147,7 +147,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 	}
 
 	.artTable img{
-	display: block;
+	  display: block;
     width: 100%; 
     max-height: 400px;
     margin-top: 3em;
@@ -157,7 +157,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 	}
 
 	.issueTable img{
-	display: block;
+	  display: block;
     width: 100%; 
     max-height:350px;
     margin-bottom: 50px;
