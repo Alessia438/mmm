@@ -143,7 +143,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   	transform: translate(0%, -120%);
 	}
 
-	.presentation-text h1{
+	.presentation-text h3{
 		text-align: center;
 	}
 
