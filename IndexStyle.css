@@ -119,6 +119,8 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
   	.block {
  	width: 100%;
+	position: relative;
+	text-align: center;
 	}
 
 	.artTable img{
@@ -129,6 +131,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 	.issueTable img{
     width:250px; 
     height:250px;
+    }
 }
 
 
