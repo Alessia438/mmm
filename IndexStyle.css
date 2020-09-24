@@ -95,13 +95,13 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 /*  @media only screen and (min-width: 701px){ */
 
   .artTable img{
-    width:370px;
-    height:225px;
+    width:33%;
+    height:auto;
   }
 
   .issueTable img{
-    width:380px; 
-    height:380px;
+    width:33%; 
+    height:auto;
   }
 /*}*/
 
@@ -139,7 +139,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 	.presentation-text {
   	vertical-align: middle;
   	text-align: justify;
-  	transform: translate(0%, -120%);
+  	transform: translate(0%, -130%);
 	}
 
 	.presentation-text h3{
