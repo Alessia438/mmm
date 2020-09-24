@@ -12,7 +12,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 .row {
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   justify-content: center; /* for centering 3 blocks in the center */
   /* justify-content: space-between;  for large space in between */
@@ -96,12 +96,12 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
   .artTable img{
     width:100%;
-    height:auto;
+    height:225px;
   }
 
   .issueTable img{
     width:100%; 
-    height:auto;
+    height:380px;
   }
 /*}*/
 
@@ -120,9 +120,9 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
   	.row {
 	 width: 100%;
-   float: none;
-   margin: 0em;
-   display: block;
+	 margin: 0 auto;
+	 float: none;
+     display: block;
 	}
 
   	.block {
