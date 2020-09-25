@@ -66,6 +66,10 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   /* justify-content: space-between;  for large space in between */
 }
 
+
+
+/* DIVS FOR ISSUES GRID/TABLE */
+
 /* the class "issue-block" is only for issues */
 .issue-block {
   width: 30%;
@@ -88,6 +92,9 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 .t-block:hover {font-size: 110%; transition: 0.50s;}
 
+
+
+/* DIVS FOR ARTICLES GRID/TABLE */
 
 /* the class "block" is only for articles */
 .block {
