@@ -130,7 +130,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 @keyframes double {
     0% {width: 0;}
-    100% {width: 70%;}
+    100% {width: 70%; right: 30%; left: 15%;}
 }
 
 /* the class "t-block" is for the black rectangle of text for issues */
