@@ -1,4 +1,4 @@
-
+/* global styling */
 body {
   font-family: 'Proza Libre', sans-serif;
   margin: 0;
@@ -9,8 +9,8 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 }
 
 
-/* styling navbar */
 
+/* styling navbar */
 .topnav {
    list-style-type: none;
       overflow: hidden;
@@ -57,6 +57,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 /* styling divs */
 
+/* the class "row" is both for issues and articles */
 .row {
   width: 100%;
   margin: 0 auto;
@@ -65,13 +66,65 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   /* justify-content: space-between;  for large space in between */
 }
 
+/* the class "block" is both for issues and articles */
 .block {
   width: 30%;
   margin: 1%;
   position: relative;
   text-align: center;
+  overflow: hidden;
+  line-height: 140%;
 }
 
+.block p {
+  line-height: 180%;
+}
+
+/*the class "artTable" is only for images of the articles grid */
+/* this is the styling for the zoom effect on hover */
+.block .artTable {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.block:hover .artTable img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.block .artTable img {
+  width: 100%;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+/* styling for the hover effect of the hr enlargement */
+.block hr {
+  border: 0;
+  border-top: 2px solid black;
+  width: 0;
+  position: absolute; /* è ciò che fa partire l'animazione dal centro */        
+  margin: 0;
+  transition: width 1s ease-out;
+  -webkit-transition: width 1s ease-out;
+  left: 50%;
+  right: 50%;
+  visibility: hidden;
+}
+
+.block:hover hr {
+  animation: double 2s .2s ease-out;
+  -webkit-animation: double 2s .2s ease-out;
+  visibility: visible;
+}
+
+@keyframes double {
+    0% { width: 0;}
+    100% { width: 100%; left: 0; right:0;}
+}
+
+/* the class "t-block" is for the black rectangle of text for issues */
 .t-block {
   background: rgb(0,0,0);
   background: rgba(0,0,0,0.4);
@@ -84,6 +137,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 .t-block:hover {font-size: 110%; transition: 0.50s;}
 
+/* the class "presentation" is only for the articles */
 .presentation {
   position: relative;
   width: 30%;
@@ -101,6 +155,8 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
    width: 50%;
 }
 
+
+/* styling the hr */
 #new {
   display: block;
   margin-top: 4em;
@@ -121,12 +177,12 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   border-color: gray;
 }
 
+
+
 /* adapting pictures */
 
-
-/*  PC */
-/*  
-@media only screen and (min-width: 701px){ */
+/* PC */
+/* @media only screen and (min-width: 701px){ */
 
   .land{
     width: 100%;
@@ -139,7 +195,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   }
 
   .cutPortrait img{
-    object-fit: cover;
+    object-fit: cover; /* può essere questo il motivo per cui non si crea spazio tra l'immagine nel div e il testo immediatamente sotto? */
     width: 100%;
   }
 
@@ -157,8 +213,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 
 /* TABLET */
-/* 
-@media only screen and (max-width: 700px){
+/* @media only screen and (max-width: 700px){
   .presentation {
   position: relative;
   width: 99%;
@@ -210,25 +265,44 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
     object-fit: cover;
     width: 100%;
   }
+    .row {
+  	  width: 100%;
+  	  margin: 0 auto;
+  	  float: none;
+      display: block;
+  	}
 
-	.artTable img{
-	display: block;
-    width: 100%; 
-    max-height: 400px;
-    margin-top: 3em;
-    margin-bottom: 0em;
-    margin-left: 0em;
-    margin-right: 0em;
-	}
+    .block {
+   	  width: 100%;
+  	}
 
-	.issueTable img{
-	display: block;
-    width: 100%; 
-    max-height:350px;
-    margin-bottom: 50px;
-    margin-top: 4em;
-    margin-left: 0em;
-    margin-right: 0em;
+  	.block h4{
+  		display: none;
+  	}
+
+  	.presentation {
+    	width: 100%;
+    	position: center;
+    	text-align: center;
+    	display: block;
+  	}
+
+  	.presentation-text {
+    	vertical-align: middle;
+    	text-align: justify;
+    	transform: translate(0%, -130%);
+  	}
+
+  	.presentation-text h3{
+  		text-align: center;
+  	}
+
+  	  .land{
+    }
+
+    .land img {
+      object-fit: cover;
+      width: 100%;
     }
 
   .footer { 
@@ -241,9 +315,29 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   }
 }
 
+  	.artTable img {
+  	  display: block;
+      width: 100%; 
+      max-height: 400px;
+      margin-top: 3em;
+      margin-bottom: 0em;
+      margin-left: 0em;
+      margin-right: 0em;
+  	}
+
+  	.issueTable img {
+  	  display: block;
+      width: 100%; 
+      max-height:350px;
+      margin-bottom: 50px;
+      margin-top: 4em;
+      margin-left: 0em;
+      margin-right: 0em;
+      }
+  }
+
 
 /* footer */
-
 .footer { 
   text-align: justify;
   text-align: center;
