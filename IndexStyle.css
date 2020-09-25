@@ -179,11 +179,11 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 	}
 
   	.block {
- 	width: 100%;
+     width: 100%;
 	}
 
 	.block h4{
-		display: none;
+	 display: none;
 	}
 
 	.presentation {
@@ -200,7 +200,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 	}
 
 	.presentation-text h3{
-		text-align: center;
+	text-align: center;
 	}
 
 	  .land{
@@ -230,6 +230,15 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
     margin-left: 0em;
     margin-right: 0em;
     }
+
+  .footer { 
+  width: 100%;
+  text-align: center;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  margin-left: 0em;
+  margin-right: 0em;
+  }
 }
 
 
@@ -246,6 +255,14 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   margin-left: 0em;
   margin-right: 0em;
 }
+.footer a{
+ text-decoration: none;
+}
+.footer a:link{color:white;}
+.footer a:hover{color:white;}
+.footer a:active{color:white;}
+.footer a:visited{color:white;}
+
 
 
 
