@@ -8,6 +8,53 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   margin: 0.3em;
 }
 
+
+/* styling navbar */
+
+.topnav {
+   list-style-type: none;
+      overflow: hidden;
+      background-color: #e6e6e6;
+      position: sticky;
+      text-align: right;
+      width: 100%;
+      margin: 0 !important;
+    }
+
+.topnav  a {
+      display: inline-block;
+      color: black;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      text-align: center;
+      
+    }
+
+.topnav a:hover {
+      background-color: #a6a6a6;
+      color: black;
+    }
+    
+.topnav a.active {
+    background-color: #1a1a1a;
+    color: white
+
+    }
+
+.topnav .icon {  
+  display: none;
+  }
+
+@media screen and (max-width: 500px) {
+      .topnav a {
+      float: none;
+      display: block;
+    }
+}
+    
+
+
 /* styling divs */
 
 .row {
