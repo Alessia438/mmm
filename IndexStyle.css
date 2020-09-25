@@ -68,7 +68,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 
 
-/* DIVS FOR ISSUES GRID/TABLE */
+/******* DIVS FOR ISSUES GRID/TABLE *************************************************************************/
 
 /* the class "issue-block" is only for issues */
 .issue-block {
@@ -94,7 +94,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 
 
-/* DIVS FOR ARTICLES GRID/TABLE */
+/***** DIVS FOR ARTICLES GRID/TABLE ************************************************************************/
 
 /* the class "block" is only for articles */
 .block {
