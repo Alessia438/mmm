@@ -66,7 +66,16 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   /* justify-content: space-between;  for large space in between */
 }
 
-/* the class "block" is both for issues and articles */
+/* the class "issue-block" is only for issues */
+.issue-block {
+  width: 30%;
+  margin: 1%;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* the class "block" is only for articles */
 .block {
   width: 30%;
   margin: 1%;
