@@ -1,3 +1,4 @@
+/* global styling */
 
 body {
   font-family: 'Proza Libre', sans-serif;
@@ -8,8 +9,53 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   margin: 0.3em;
 }
 
-/* styling divs */
+/* navbar */
+.topnav {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #e6e6e6;
+  position: sticky;
+  text-align: right;
+  width: 100%;
+  margin: 0 !important;
+}
 
+.topnav  a {
+  display: inline-block;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  text-align: center;
+  
+}
+
+.topnav a:hover {
+  background-color: #a6a6a6;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #1a1a1a;
+  color: white
+
+}
+
+.topnav .icon {  
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .topnav a {
+    float: none;
+    display: block;
+  }
+}
+
+
+/* styling divs, both for issues and articles */
+
+/* the class "row" is both for issues and articles */
 .row {
   width: 100%;
   margin: 0 auto;
@@ -18,13 +64,60 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   /* justify-content: space-between;  for large space in between */
 }
 
+/* the class "block" is both for issues and articles */
 .block {
   width: 30%;
   margin: 1%;
   position: relative;
   text-align: center;
+  overflow: hidden;
 }
 
+/*the class "artTable" is only for images of the articles grid */
+/* this is the styling for the zoom effect on hover */
+.block .artTable {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.block:hover .artTable img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.block .artTable img {
+  width: 100%;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+/* styling for the hover effect of the hr enlargement */
+.block hr {
+  border: 0;
+  border-top: 2px solid black;
+  width: 0;
+  position: absolute; /* è ciò che fa partire l'animazione dal centro */        
+  margin: 0;
+  transition: width 1s ease-out;
+  -webkit-transition: width 1s ease-out;
+  left: 50%;
+  right: 50%;
+  visibility: hidden;
+}
+
+.block:hover hr {
+  animation: double 2s .2s ease-out;
+  -webkit-animation: double 2s .2s ease-out;
+  visibility: visible;
+}
+
+@keyframes double {
+    0% { width: 0;}
+    100% { width: 100%; left: 0; right:0;}
+}
+
+/* the class "t-block" is for the black rectangle of text for issues */
 .t-block {
   background: rgb(0,0,0);
   background: rgba(0,0,0,0.4);
@@ -37,6 +130,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 .t-block:hover {font-size: 110%; transition: 0.50s;}
 
+/* the class "presentation" is only for the articles */
 .presentation {
   position: relative;
   width: 30%;
@@ -54,6 +148,8 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
    width: 50%;
 }
 
+
+/* styling the hr */
 #new {
   display: block;
   margin-top: 4em;
@@ -74,8 +170,9 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   border-color: gray;
 }
 
-/* adapting pictures */
 
+
+/* adapting pictures */
 
 /*  PC */
 /*  
@@ -124,66 +221,66 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
   @media screen and (max-width: 550px){
 
-  	.row {
-	 width: 100%;
-	 margin: 0 auto;
-	 float: none;
-     display: block;
-	}
+    .row {
+  	  width: 100%;
+  	  margin: 0 auto;
+  	  float: none;
+      display: block;
+  	}
 
-  	.block {
- 	width: 100%;
-	}
+    .block {
+   	  width: 100%;
+  	}
 
-	.block h4{
-		display: none;
-	}
+  	.block h4{
+  		display: none;
+  	}
 
-	.presentation {
-  	width: 100%;
-  	position: center;
-  	text-align: center;
-  	display: block;
-	}
+  	.presentation {
+    	width: 100%;
+    	position: center;
+    	text-align: center;
+    	display: block;
+  	}
 
-	.presentation-text {
-  	vertical-align: middle;
-  	text-align: justify;
-  	transform: translate(0%, -130%);
-	}
+  	.presentation-text {
+    	vertical-align: middle;
+    	text-align: justify;
+    	transform: translate(0%, -130%);
+  	}
 
-	.presentation-text h3{
-		text-align: center;
-	}
+  	.presentation-text h3{
+  		text-align: center;
+  	}
 
-	  .land{
-  }
-
-  .land img{
-    object-fit: cover;
-    width: 100%;
-  }
-
-	.artTable img{
-	display: block;
-    width: 100%; 
-    max-height: 400px;
-    margin-top: 3em;
-    margin-bottom: 0em;
-    margin-left: 0em;
-    margin-right: 0em;
-	}
-
-	.issueTable img{
-	display: block;
-    width: 100%; 
-    max-height:350px;
-    margin-bottom: 50px;
-    margin-top: 4em;
-    margin-left: 0em;
-    margin-right: 0em;
+  	  .land{
     }
-}
+
+    .land img {
+      object-fit: cover;
+      width: 100%;
+    }
+
+  	.artTable img {
+  	  display: block;
+      width: 100%; 
+      max-height: 400px;
+      margin-top: 3em;
+      margin-bottom: 0em;
+      margin-left: 0em;
+      margin-right: 0em;
+  	}
+
+  	.issueTable img {
+  	  display: block;
+      width: 100%; 
+      max-height:350px;
+      margin-bottom: 50px;
+      margin-top: 4em;
+      margin-left: 0em;
+      margin-right: 0em;
+      }
+  }
 
 
 /* footer */
