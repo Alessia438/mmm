@@ -196,12 +196,17 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   .land{
     width: 100%;
     float: left;
-    padding-bottom: 28px;
+    padding-bottom: 15px;
   }
 
   .land img{
     width: 100%;
   }
+
+  .cutPortrait {
+    padding-bottom: 15px;
+  }
+
 
   .cutPortrait img{
     object-fit: cover;
