@@ -76,6 +76,10 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   line-height: 140%;
 }
 
+.block p {
+  line-height: 180%;
+}
+
 /*the class "artTable" is only for images of the articles grid */
 /* this is the styling for the zoom effect on hover */
 .block .artTable {
