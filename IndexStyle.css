@@ -75,6 +75,20 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   overflow: hidden;
 }
 
+/* the class "t-block" is for the black rectangle of text for issues */
+.t-block {
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0.4);
+  color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.t-block:hover {font-size: 110%; transition: 0.50s;}
+
+
 /* the class "block" is only for articles */
 .block {
   width: 30%;
@@ -133,18 +147,6 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
     100% {width: 70%; right: 30%; left: 15%;}
 }
 
-/* the class "t-block" is for the black rectangle of text for issues */
-.t-block {
-  background: rgb(0,0,0);
-  background: rgba(0,0,0,0.4);
-  color: white;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-}
-
-.t-block:hover {font-size: 110%; transition: 0.50s;}
 
 /* the class "presentation" is only for the articles */
 .presentation {
