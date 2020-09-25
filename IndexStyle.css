@@ -176,9 +176,8 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 /* adapting pictures */
 
-/*  PC */
-/*  
-@media only screen and (min-width: 701px){ */
+/* PC */
+/* @media only screen and (min-width: 701px){ */
 
   .land{
     width: 100%;
@@ -209,8 +208,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 
 /* TABLET */
-/* 
-@media only screen and (max-width: 700px){
+/* @media only screen and (max-width: 700px){
   .presentation {
   position: relative;
   width: 99%;
@@ -286,7 +284,6 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 
 /* footer */
-
 .footer { 
   text-align: justify;
   text-align: center;
