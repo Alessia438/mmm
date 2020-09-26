@@ -12,39 +12,39 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 /* styling navbar */
 .topnav {
-   list-style-type: none;
-      overflow: hidden;
-      background-color: #e6e6e6;
-      position: sticky;
-      text-align: right;
-      width: 100%;
-      margin: 0 !important;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #e6e6e6;
+  position: sticky;
+  text-align: right;
+  width: 100%;
+  margin: 0 !important;
     }
 
 .topnav  a {
-      display: inline-block;
-      color: black;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-      text-align: center;
-      
-    }
+  display: inline-block;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  text-align: center;
+  
+}
 
 .topnav a:hover {
-      background-color: #a6a6a6;
-      color: black;
-    }
+  background-color: #a6a6a6;
+  color: black;
+}
     
 .topnav a.active {
-    background-color: #1a1a1a;
-    color: white
+  background-color: #1a1a1a;
+  color: white
 
-    }
+}
 
 .topnav .icon {  
   display: none;
-  }
+}
 
 @media screen and (max-width: 500px) {
       .topnav a {
@@ -66,7 +66,37 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   /* justify-content: space-between;  for large space in between */
 }
 
-/* the class "block" is both for issues and articles */
+
+
+/******* DIVS FOR ISSUES GRID/TABLE *************************************************************************/
+
+/* the class "issue-block" is only for issues */
+.issue-block {
+  width: 30%;
+  margin: 1%;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* the class "t-block" is for the black rectangle of text for issues */
+.t-block {
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0.4);
+  color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.t-block:hover {font-size: 110%; transition: 0.50s;}
+
+
+
+/***** DIVS FOR ARTICLES GRID/TABLE ************************************************************************/
+
+/* the class "block" is only for articles */
 .block {
   width: 30%;
   margin: 1%;
@@ -120,22 +150,10 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 }
 
 @keyframes double {
-    0% { width: 0;}
-    100% { width: 100%; left: 0; right:0;}
+    0% {width: 0;}
+    100% {width: 70%; right: 30%; left: 15%;}
 }
 
-/* the class "t-block" is for the black rectangle of text for issues */
-.t-block {
-  background: rgb(0,0,0);
-  background: rgba(0,0,0,0.4);
-  color: white;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-}
-
-.t-block:hover {font-size: 110%; transition: 0.50s;}
 
 /* the class "presentation" is only for the articles */
 .presentation {
@@ -154,6 +172,16 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
    border-radius: 50%; 
    width: 50%;
 }
+
+/** QUESTIONE RESPONSIVENESS QUANDO LA FINESTRA DEL BROWSER DIMUISCE */ 
+@media only screen and (max-width: 700px){
+  .presentation-text {
+    position: absolute;
+    transform: translate(5%, -30%);
+    margin-right: 0.3em;
+  }
+}
+
 
 
 /* styling the hr */
@@ -187,15 +215,20 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   .land{
     width: 100%;
     float: left;
-    padding-bottom: 28px;
+    padding-bottom: 15px;
   }
 
   .land img{
     width: 100%;
   }
 
+  .cutPortrait {
+    padding-bottom: 15px;
+  }
+
+
   .cutPortrait img{
-    object-fit: cover; /* può essere questo il motivo per cui non si crea spazio tra l'immagine nel div e il testo immediatamente sotto? */
+    object-fit: cover;
     width: 100%;
   }
 
