@@ -110,7 +110,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   line-height: 180%;
 }
 
-/*the div class "artTable" is for images of the articles grid */
+/* the div class "artTable" is for images of the articles grid */
 /* this is the styling for the zoom effect on hover */
 .block .artTable {
   width: 100%;
@@ -246,12 +246,6 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
       position: relative;
       width: 50%;
       margin: 1%;
-    }
-
-    .presentation-text {
-      position: absolute;
-      transform: translate(5%, -30%);
-      margin-right: 0.3em;
     }
 
     .block {
