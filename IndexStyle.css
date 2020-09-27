@@ -57,7 +57,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 /* styling divs */
 
-/* the class "row" is both for issues and articles */
+/* the div class "row" is both for issues and articles */
 .row {
   width: 100%;
   margin: 0 auto;
@@ -70,7 +70,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 /******* DIVS FOR ISSUES GRID/TABLE *************************************************************************/
 
-/* the class "issue-block" is only for issues */
+/* the div class "issue-block" is only for issues */
 .issue-block {
   width: 30%;
   margin: 1%;
@@ -79,7 +79,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   overflow: hidden;
 }
 
-/* the class "t-block" is for the black rectangle of text for issues */
+/* the div class "t-block" is for the black rectangle of text for issues */
 .t-block {
   background: rgb(0,0,0);
   background: rgba(0,0,0,0.4);
@@ -96,7 +96,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 /***** DIVS FOR ARTICLES GRID/TABLE ************************************************************************/
 
-/* the class "block" is only for articles */
+/* the div class "block" is only for articles */
 .block {
   width: 30%;
   margin: 1%;
@@ -110,7 +110,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   line-height: 180%;
 }
 
-/*the class "artTable" is only for images of the articles grid */
+/* the div class "artTable" is for images of the articles grid */
 /* this is the styling for the zoom effect on hover */
 .block .artTable {
   width: 100%;
@@ -155,7 +155,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 }
 
 
-/* the class "presentation" is only for the articles */
+/* the div class "presentation" is only for the articles */
 .presentation {
   position: relative;
   width: 30%;
@@ -164,23 +164,23 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 .presentation-text {
   position: absolute;
-  transform: translate(5%, -70%);
-  margin-right: 0.3em;
+  transform: translateY(-35%);
+  margin-right: 1%;
+  margin-left: 5%;
 }
 
-.presentation img{
+.presentation img {
    border-radius: 50%; 
    width: 50%;
+   margin-top: 5%;
 }
 
-/** QUESTIONE RESPONSIVENESS QUANDO LA FINESTRA DEL BROWSER DIMUISCE */ 
-@media only screen and (max-width: 700px){
+@media /* only */ screen and (max-width: 820px){
   .presentation-text {
-    position: absolute;
-    transform: translate(5%, -30%);
-    margin-right: 0.3em;
+    transform: translateY(-25%);
   }
 }
+
 
 
 
@@ -245,9 +245,8 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 
 /* TABLET */
-/* @media only screen and (max-width: 700px){
-*/
-  @media screen and (max-width: 700px){
+/* @media only screen and (max-width: 700px) */
+  @media /* only */ screen and (max-width: 700px){
 
     .row {
       width: 100%;
@@ -257,22 +256,27 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
     }
     .row div:last-child {
     width: 100%;
-  } 
+    } 
 
     .presentation {
     width: 50%;
     margin: 1%;
     text-align: center;
-  }
+    }
     .block {
     width: 50%;
-  }
+    }
 
-  
-  }
+    .presentation img {
+       margin-top: 25%;
+    }
+
+    .presentation-text {
+      transform: translateY(-22%);
+    }
+
     .artTable img {
-      display: block;
-      
+      display: block;  
       padding: 5px;
       max-height: 400px;
       margin-top: 3em;
@@ -314,22 +318,21 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   	.presentation-text {
     	vertical-align: middle;
     	text-align: justify;
-    	transform: translate(0%, -130%);
+    	transform: translateY(-100%);
+      margin-left: 1%;
   	}
 
   	.presentation-text h3{
   		text-align: center;
   	}
 
-  	  .land{
+  	.land{
     }
 
     .land img {
       object-fit: cover;
       width: 100%;
     }
-
-
 
   	.artTable img {
   	  display: block;
