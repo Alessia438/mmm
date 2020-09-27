@@ -250,19 +250,21 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   @media screen and (max-width: 700px){
 
     .presentation {
-    position: relative;
-    width: 50%;
-    margin: 1%;
-    text-align: center;
-  }
+      position: relative;
+      width: 50%;
+      margin: 1%;
+      text-align: center;
+    }
+
     .block {
-    width: 50%;
-    margin: 1%;
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-    line-height: 140%;
-}
+      width: 50%;
+      margin: 1%;
+      position: relative;
+      text-align: center;
+      overflow: hidden;
+      line-height: 140%;
+    }
+    
     .artTable img {
       display: block;
       object-position: 5 px 10%;
@@ -273,6 +275,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
       margin-left: 0em;
       margin-right: 0em;
     }
+  
   }
 
 
