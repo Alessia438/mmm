@@ -307,7 +307,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   	.presentation-text {
     	vertical-align: middle;
     	text-align: justify;
-    	transform: translate(0%, -130%);
+    	transform: translate(0%, 0%);
   	}
 
   	.presentation-text h3{
