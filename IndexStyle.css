@@ -260,17 +260,15 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
       width: 100%;
       margin: 0 auto;
       float: none;
-      display: block;
+      display: flex;
     }
-    .row div:last-child {
-    width: 100%;
-    } 
-
+       
     .presentation {
     width: 50%;
     margin: 1%;
     text-align: center;
     }
+
     .block {
     width: 50%;
     }
@@ -285,15 +283,15 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
       transform: translateY(-22%);
     }
 
-    .artTable img {
-      display: block;  
+    .artTable img {  
       padding: 5px;
       max-height: 400px;
       margin-top: 3em;
       margin-bottom: 0em;
       margin-left: 0em;
       margin-right: 0em;
-  }
+    }
+   
 }
 
 
