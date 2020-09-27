@@ -251,11 +251,14 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
     .presentation {
       position: relative;
       width: 50%;
-      margin: 1%;
+    }
+
+    .presentation img {
+       margin: 0;
     }
 
     .presentation-text {
-      transform: translateY(-10%);
+      transform: translateY(-15%);
     }
 
     .block {
