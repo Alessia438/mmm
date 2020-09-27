@@ -57,7 +57,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 /* styling divs */
 
-/* the class "row" is both for issues and articles */
+/* the div class "row" is both for issues and articles */
 .row {
   width: 100%;
   margin: 0 auto;
@@ -70,7 +70,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 /******* DIVS FOR ISSUES GRID/TABLE *************************************************************************/
 
-/* the class "issue-block" is only for issues */
+/* the div class "issue-block" is only for issues */
 .issue-block {
   width: 30%;
   margin: 1%;
@@ -79,7 +79,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   overflow: hidden;
 }
 
-/* the class "t-block" is for the black rectangle of text for issues */
+/* the div class "t-block" is for the black rectangle of text for issues */
 .t-block {
   background: rgb(0,0,0);
   background: rgba(0,0,0,0.4);
@@ -96,7 +96,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 /***** DIVS FOR ARTICLES GRID/TABLE ************************************************************************/
 
-/* the class "block" is only for articles */
+/* the div class "block" is only for articles */
 .block {
   width: 30%;
   margin: 1%;
@@ -110,7 +110,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   line-height: 180%;
 }
 
-/*the class "artTable" is only for images of the articles grid */
+/*the div class "artTable" is for images of the articles grid */
 /* this is the styling for the zoom effect on hover */
 .block .artTable {
   width: 100%;
@@ -155,7 +155,7 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 }
 
 
-/* the class "presentation" is only for the articles */
+/* the div class "presentation" is only for the articles */
 .presentation {
   position: relative;
   width: 30%;
@@ -164,11 +164,12 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 .presentation-text {
   position: absolute;
-  transform: translate(5%, -70%);
+  transform: translateY(50%);
   margin-right: 0.3em;
+  margin-left: 5%;
 }
 
-.presentation img{
+.presentation img {
    border-radius: 50%; 
    width: 50%;
 }
