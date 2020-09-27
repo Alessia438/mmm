@@ -249,31 +249,38 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 */
   @media screen and (max-width: 700px){
 
+    .row {
+      width: 100%;
+      margin: 0 auto;
+      float: none;
+      display: block;
+    }
+    .row div:last-child {
+    width: 100%;
+  } 
+
     .presentation {
-    position: relative;
     width: 50%;
     margin: 1%;
     text-align: center;
   }
     .block {
     width: 50%;
-    margin: 1%;
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-    line-height: 140%;
-}
+  }
+
+  
+  }
     .artTable img {
       display: block;
-      object-position: 5 px 10%;
+      
       padding: 5px;
       max-height: 400px;
       margin-top: 3em;
       margin-bottom: 0em;
       margin-left: 0em;
       margin-right: 0em;
-    }
   }
+}
 
 
 
