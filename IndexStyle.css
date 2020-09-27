@@ -260,15 +260,6 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
     .presentation-text {
       transform: translateY(-15%);
     }
-
-    .block {
-      width: 50%;
-      margin: 1%;
-      position: relative;
-      text-align: center;
-      overflow: hidden;
-      line-height: 140%;
-    }
     
     .artTable img {
       display: block;
@@ -330,8 +321,6 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
       object-fit: cover;
       width: 100%;
     }
-
-
 
   	.artTable img {
   	  display: block;
