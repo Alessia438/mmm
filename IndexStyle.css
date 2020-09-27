@@ -173,14 +173,6 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
    width: 50%;
 }
 
-/** QUESTIONE RESPONSIVENESS QUANDO LA FINESTRA DEL BROWSER DIMUISCE */ 
-@media only screen and (max-width: 700px){
-  .presentation-text {
-    position: absolute;
-    transform: translate(5%, -30%);
-    margin-right: 0.3em;
-  }
-}
 
 
 
@@ -247,13 +239,19 @@ a, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 /* TABLET */
 /* @media only screen and (max-width: 700px){
 */
-  @media screen and (max-width: 700px){
+  @media /* only */ screen and (max-width: 700px){
 
     .presentation {
       position: relative;
       width: 50%;
       margin: 1%;
       text-align: center;
+    }
+
+    .presentation-text {
+      position: absolute;
+      transform: translate(5%, -30%);
+      margin-right: 0.3em;
     }
 
     .block {
