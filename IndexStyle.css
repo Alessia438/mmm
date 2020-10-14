@@ -75,7 +75,7 @@ a, img, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 .selector {
   list-style-type: none;
   overflow: hidden;
-  background-color: #e6e6e6;
+  background-color: #a6a6a6; 
   position: sticky;
   text-align: left;
   width: 100%;
@@ -93,7 +93,7 @@ a, img, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 }
 
 .selector a:hover {
-  background-color: #a6a6a6;
+  background-color: #e6e6e6;
   color: black;
 }
     
