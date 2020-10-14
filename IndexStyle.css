@@ -309,6 +309,14 @@ a, img, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   right: 0;
 }
 
+#textContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 
 /* adapting pictures */
 
