@@ -284,7 +284,6 @@ a, img, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
   /******* DIVS FOR ARTICLE PAGES *************************************************************************/
 .selector{
-  height: 100%;
   width: 60%;
   position: fixed;
   z-index: 1;
@@ -295,11 +294,9 @@ a, img, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 .left {
   left: 0;
-  background-color: #111;
 }
 
 .metadataVuewer {
-  height: 100%;
   width: 40%;
   position: fixed;
   z-index: 1;
@@ -310,7 +307,6 @@ a, img, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 .right {
   right: 0;
-  background-color: red;
 }
 
 #textContent {
