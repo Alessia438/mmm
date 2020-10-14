@@ -296,7 +296,7 @@ a, img, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   left: 0;
 }
 
-.metadataVuewer {
+.metadataViewer {
   width: 40%;
   position: fixed;
   z-index: 1;
