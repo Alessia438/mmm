@@ -72,7 +72,7 @@ a, img, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 
 /* styling selector */
-.selector {
+.articleMenu {
   list-style-type: none;
   overflow: hidden;
   background-color: #a6a6a6; 
@@ -82,7 +82,7 @@ a, img, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   margin: 0 !important;
     }
 
-.selector  a {
+.articleMenu  a {
   display: inline-block;
   color: black;
   padding: 14px 16px;
@@ -92,23 +92,23 @@ a, img, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   
 }
 
-.selector a:hover {
+.articleMenu a:hover {
   background-color: #e6e6e6;
   color: black;
 }
     
-.selector a.active {
+.articleMenu a.active {
   background-color: #1a1a1a;
   color: white
 
 }
 
-.selector .icon {  
+.articleMenu .icon {  
   display: none;
 }
 
 @media screen and (max-width: 500px) {
-      .selector a {
+      .articleMenu a {
       float: none;
       display: block;
     }
@@ -281,6 +281,23 @@ a, img, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   border-color: gray;
 }
 
+
+/******* DIVS FOR ISSUES GRID/TABLE *************************************************************************/
+.selector{
+  width: 60%;
+  margin: 1%;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.metadataVuewer {
+  width: 40%;
+  margin: 1%;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
 
 
 /* adapting pictures */
