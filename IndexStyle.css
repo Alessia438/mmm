@@ -291,7 +291,7 @@ a, img, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   z-index: 1;
   top: 0;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding-top: 5px;
   left: 0;
 }
 
@@ -301,7 +301,7 @@ a, img, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   z-index: 1;
   top: 0;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding-top: 5px;
     right: 0;
 }
 
