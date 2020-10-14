@@ -287,7 +287,7 @@ a, img, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   /******* DIVS FOR ARTICLE PAGES *************************************************************************/
 #selector{
   width: 60%;
-  position: fixed;
+  position: relative;
   z-index: 1;
   top: 0;
   overflow-x: hidden;
@@ -297,7 +297,7 @@ a, img, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 #metadataViewer {
   width: 40%;
-  position: fixed;
+  position: relative;
   z-index: 1;
   top: 0;
   overflow-x: hidden;
