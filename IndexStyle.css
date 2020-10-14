@@ -310,7 +310,7 @@ a, img, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 }
 
 #textContent {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
