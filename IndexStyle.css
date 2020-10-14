@@ -284,19 +284,41 @@ a, img, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
   /******* DIVS FOR ARTICLE PAGES *************************************************************************/
 .selector{
+  height: 100%;
   width: 60%;
-  margin: 3mm;
-  position: relative;
-  text-align: center;
-  overflow: hidden;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #111;
 }
 
 .metadataVuewer {
+  height: 100%;
   width: 40%;
-  margin: 3mm;
-  position: relative;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.right {
+  right: 0;
+  background-color: red;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  overflow: hidden;
 }
 
 
