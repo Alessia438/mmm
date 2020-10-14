@@ -285,7 +285,7 @@ a, img, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 
   /******* DIVS FOR ARTICLE PAGES *************************************************************************/
-.selector{
+#selector{
   width: 60%;
   position: fixed;
   z-index: 1;
@@ -294,11 +294,11 @@ a, img, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   padding-top: 20px;
 }
 
-.left {
+#left {
   left: 0;
 }
 
-.metadataViewer {
+#metadataViewer {
   width: 40%;
   position: fixed;
   z-index: 1;
@@ -307,7 +307,7 @@ a, img, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   padding-top: 20px;
 }
 
-.right {
+#right {
   right: 0;
 }
 
