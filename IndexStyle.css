@@ -622,6 +622,8 @@ Bottom right text
 #metadata {
   grid-area: side;
   overflow: scroll;
+  
+  /*tentativo per tenere fissa la posizione e la dimensione del div del metadata */
   position: sticky;
   right: : 0; /*to make it stick to the right of the screen*/
   height: 100; /* the height equal to 100 view height */
