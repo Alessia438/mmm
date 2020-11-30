@@ -224,7 +224,7 @@ function metadataViewer () {  // ricordarsi di lowercase e altre cose di scrittu
     	for (var n = 1; n < myFrames.length; n++) { 
 		
 		var sc = document.createElement("script");
-		sc.setAttribute('src', 'PROVA_js.js');
+		sc.setAttribute('src', 'main.js');
 		myFrames[n].contentWindow.document.head.appendChild(sc);
 		
 	    	var elmnt = myFrames[n].contentWindow.document.body;
