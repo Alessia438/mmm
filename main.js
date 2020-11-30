@@ -165,10 +165,10 @@ function changeArticleCover(articleNum, issueNum){
 function prevArticle() {
  	var articles = document.getElementsByClassName("article");
  	
- 	for (var i = 1; i < articles.length; i++) { /* i= 1 perché non voglio considerare il primo articolo */
+ 	for (var i = 1; i < articles.length; i++) { //i= 1 perché non voglio considerare il primo articolo
  		var frame = articles[i],
  			style = window.getComputedStyle(frame),
-			displayValue = style.getPropertyValue('display'); /* queste ultime due righe sono equivalenti a var displayValue = window.getComputedStyle(frame, null).display; */
+			displayValue = style.getPropertyValue('display'); //queste ultime due righe sono equivalenti a var displayValue = window.getComputedStyle(frame, null).display;
 		if (displayValue === "block") {
 			if (!(frame.classList.contains('article1'))) {
 				frame.style.display = "none";
@@ -178,7 +178,7 @@ function prevArticle() {
 				var curIssue = articleNow.parentElement;
 				var x = curIssue.children[i-1]; */
 				var myOrigin = document.getElementById("Origin");
-				getLinkOrigin(articleNow, myOrigin); /* se scegliamo di definire la variabile myframe in questa funzione va sostituito articleNow con myFrame come parametro input della funzione getLinkOrigin */
+				getLinkOrigin(articleNow, myOrigin); // se scegliamo di definire la variabile myframe in questa funzione va sostituito articleNow con myFrame come parametro input della funzione getLinkOrigin
 			}
 		}
 	}	
@@ -187,12 +187,12 @@ function prevArticle() {
 function nextArticle() {
 	var articles = document.getElementsByClassName("article");
 
-	for (var i = articles.length-2; i >= 0; i--) { /* articles length = 6, ma noi non vogliamo considerare l'ultimo quindi mettiamo articles.lenght - 2 (con -1 considera anche l'ultimo perché lenght - 1 = 5 e articles[5] è l'ultimo articolo) */
+	for (var i = articles.length-2; i >= 0; i--) { //articles length = 6, ma noi non vogliamo considerare l'ultimo quindi mettiamo articles.lenght - 2 (con -1 considera anche l'ultimo perché length - 1 = 5 e articles[5] è l'ultimo articolo)
 		var frame = articles[i],
     		style = window.getComputedStyle(frame),
 			displayValue = style.getPropertyValue('display');
 		if (displayValue === 'block') {
-			if (!(frame.classList.contains('article3'))) { /* IMPORTANTE: qua ho messo che la classe dell'ultimo articolo è "article3" ma nel sito finale sarà ARTICLE5*/
+			if (!(frame.classList.contains('article5'))) { //IMPORTANTE: qua ho messo che la classe dell'ultimo articolo è "article5"
 				frame.style.display='none';
 				articles[i+1].style.display = 'block';
 				var myOrigin = document.getElementById("Origin");
@@ -229,19 +229,15 @@ function metadataViewer () {  // ricordarsi di lowercase e altre cose di scrittu
 		
 	    	var elmnt = myFrames[n].contentWindow.document.body;
 
-	    	/*aggiungere un id ad ogni elemento del body tipo = "h1-1-n" */
+	    	//add an id for each element of the body of the iframe with the name of the tag + number of the tag + number of the current article (e.g. "h1-1-n")
 	    	var allIframeElements = elmnt.getElementsByTagName("*");
 	    	//for (let element of allIframeElements) {
 	    	for (var e = 0; e < allIframeElements.length; e++) {
-	    		var x = allIframeElements[e].tagName; //ritorna una stringa che rappresenta il nome del tag in maiuscolo, in realtà x è inutile ai fini di creare un id unico, però può servirci quando dobbiamo dare un punto di riferimento nel documento all'utente
-	    		
-	    		var elementsWithSameTag = elmnt.querySelectorAll('[id^=' + CSS.escape(x) + ']'); //^ matches the start; the querySelectorAll method returns a static NodeList representing a list of elements that match the specified group of selectors; css.escape per assicurarsi che il valore sia codificato correttamente per l'uso in un'espressione CSS.
+	    		var x = allIframeElements[e].tagName; //ritorna una stringa che rappresenta il nome del tag in maiuscolo	    		
+	    		var elementsWithSameTag = elmnt.querySelectorAll('[id^=' + CSS.escape(x) + ']'); //^ matches the start; the querySelectorAll method returns a static NodeList with elements matching the specified group of selectors; css.escape per assicurarsi che il valore sia codificato correttamente per l'uso in un'espressione CSS
 	    		var len = elementsWithSameTag.length;
-
-	    		allIframeElements[e].setAttribute("id", x+"-"+(len+1)+"-"+n);		    				    		
-				//allIframeElements[e].setAttribute("id", x+"-"+e+"-"+n); // alternativa: element.id = "";
-	    	}
-	    	// esempio: art.2 dell'issue 2, i primi 5 elementi del body sono: <section id="SECTION-1-2">, <h1 id="H1-1-2">, <img id="IMG-1-2">, <p id="P-1-2">, <p id="p-2-2">...		    	 
+	    		allIframeElements[e].setAttribute("id", x+"-"+(len+1)+"-"+n);
+	    	}		    	 
 			
 			// get span tag 
 			var spans = Array.prototype.slice.call(elmnt.getElementsByTagName("span"));
@@ -290,9 +286,11 @@ function metadataViewer () {  // ricordarsi di lowercase e altre cose di scrittu
 				
 			}
 
+
 			// get time tag 
 			var times = Array.prototype.slice.call(elmnt.getElementsByTagName("time"));
 
+			//first check: if the category already exist
 			for (var t=0; t<times.length; t++){
 				// creating variable for parent
 				if (times[t].parentNode.tagName === ("Q" || "I" || "SPAN" || "A" || "EM" || "STRONG" || "B" || "CITE")) {
@@ -342,7 +340,7 @@ function createCategoryLi(category, myList) {
 	myList.appendChild(newLi);
 }
 
-function createInstanceUl(instance, parentLi, myList) { //ragionare sul primo link a wikipedia (se farlo vedere contemporaneamente all'ul)
+function createInstanceUl(instance, parentLi, myList) {
 	var newUl = document.createElement('ul');
 	newUl.setAttribute('class', instance);
 	newUl.setAttribute('onClick', "showUlChildren('"+myList.id+"', '"+instance+"', event)");
@@ -439,6 +437,7 @@ function showLiChildren(myListId, instanceId){
 				g.style.display = 'none'; 
 			}
 			*/
+
 			// non mostrare i figli <li> degli <ul> tranne il primo figlio di ogni <ul>, cioè il link a wikipedia
 			for (var g = 0; g < f.length; g++) {
 				if (g === 0) {f[g].style.display = "inline-block";}
@@ -485,7 +484,7 @@ function parsing(instance, parent, numIstanza){
 }
 
 // evidenziare i metadati nel testo dell'articolo
-// serve anche cambiare articolo se i metadati puntano all'articolo non in block al momento?
+// serve anche cambiare articolo se i metadati puntano all'articolo non in block al momento? sì
 // manca la scomparsa dello stile onscroll e onclick su qualunque altro tasto
 function highlight(spanId, iFrameN, event) {
 	//removeHighligth(iFrameN);
@@ -539,7 +538,7 @@ function highlight(spanId, iFrameN, event) {
 
 function sortOccurrences(keyToSearch){
 	var elements = document.getElementById("metadata").children;
-	for (var i = 1; i <= 2; i++){   //nella versine finale ci sarà 3 perchè abbiamo 3 listissues
+	for (var i = 1; i <= elements.length; i++){   //sostituito 2 con elements.length 
 		sortCategory(document.getElementById("listIssue" + i), keyToSearch);
 		for (var n = 0; n < document.getElementById("listIssue" + i).children.length; n++){
 			sortCategory(document.getElementById("listIssue" + i).getElementsByClassName(document.getElementById("listIssue" + i).children[n].className)[0], keyToSearch);
@@ -549,7 +548,7 @@ function sortOccurrences(keyToSearch){
 /*
 function sortByAppearance(){
 	var elements = document.getElementById("metadata").children;
-	for (var i = 1; i <= 2; i++){   //nella versine finale ci sarà 3 perchè abbiamo 3 listissues
+	for (var i = 1; i <= elements.length; i++){   //sostituito 2 con elements.length
 		sortCategory(document.getElementById("listIssue" + i), 'data-position');
 		for (var n = 0; n < document.getElementById("listIssue" + i).children.length; n++){
 			sortCategory(document.getElementById("listIssue" + i).getElementsByClassName(document.getElementById("listIssue" + i).children[n].className)[0], 'data-position');
