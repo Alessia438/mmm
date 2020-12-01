@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  display: flex;
+  /*display: flex;*/
   font-family: 'Proza Libre', sans-serif;
   margin: 0;
     margin-top: 0px;
@@ -494,8 +494,8 @@ img, p, h1, h2, h3, h4, h5, h6, hr, br {
   margin-bottom: 0em;
   margin-left: 0em;
   margin-right: 0em;
-  /* per fissarlo sotto */
-  flex-shrink: 0;
+  /* per fissarlo sotto con FLEX --> BODY DISPLAY: FLEX;
+  flex-shrink: 0; */
 }
 .footer a{text-decoration: none;}
 .footer a:link{color:white;}
