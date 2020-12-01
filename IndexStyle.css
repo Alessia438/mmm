@@ -28,7 +28,7 @@ a, img, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   text-align: right;
   width: 100%;
   margin: 0 !important;
-    }
+}
 
 .topnav  a {
   display: inline-block;
@@ -602,7 +602,22 @@ Bottom right text
   display: block;
 }
 
-#grid-container {
+
+
+
+
+
+
+
+
+
+
+#flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*#grid-container {
   display: grid;
   grid-template-areas:
   'header header header header header'
@@ -610,32 +625,87 @@ Bottom right text
   'footer footer footer footer footer';
   grid-gap: 5px;
 /*  padding: 5px;  */
-/*  width: 100%;  */
+/*  width: 100%;
     height: 100%;
 /*  grid-auto-rows: min-content;
   grid-template-columns: 3fr 2fr;
-  grid-template-rows: 50px 1fr 50px;*/
-}
+  grid-template-rows: 50px 1fr 50px;
+}*/
 
+
+/* @media (min-width: 768px) */
 #content {
-  grid-area: main; 
-  position: relative;
+  /*grid-area: main;
+  position: relative;*/
+  flex: 0 0 70%;
+  max-width: 70%;
 }
 
 #metadata {
-  grid-area: side;
+  /*grid-area: side;*/
   overflow: scroll;
-  
-  /*tentativo per tenere fissa la posizione e la dimensione del div del metadata */
-  position: sticky;
-  right: : 0; /*to make it stick to the right of the screen*/
-  height: 100; /* the height equal to 100 view height */
-  box-sizing: border-box; /*to avoid the div to jump up at the end of the page*/
+  flex: 0 0 30%;
+  max-width: 30%;
 }
 
-#top { grid-area: header;}
+/*#top { grid-area: header;}
 
-#bottom { grid-area: footer;}
+#bottom { grid-area: footer;}*/
+
+
+
+
+
+/*extra per la navbar generale
+
+@media (min-width: 992px)
+.navbar-expand-lg {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.topnav {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}*/
+
+/* extra per selectorNav */
+/* selectorNav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1500;
+    border-bottom: 4px solid black;
+    padding-top: 5px;
+    height: 60px;
+    font-size: 18px;
+}
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}*/
+
+
+
+
+
+
+
+
 
 button#prev, button#next  {
   background: rgba(0,0,0,0.4);
@@ -659,10 +729,37 @@ button#prev, button#next  {
   right: 2px;
 }
 
+
+
+
+
+
+
+
+
+
 .article {
   padding-left: 30px;
   padding-right: 32px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 [onClick] {cursor:pointer;}
