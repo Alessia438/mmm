@@ -641,8 +641,8 @@ Bottom right text
 #content {
   /*grid-area: main; */
   position: relative;
-  flex: 0 0 65%; /* se metto 70% non si allineano orizzontalmente */
-  max-width: 65%;
+  flex: 0 0 70%; /* se metto 70% non si allineano orizzontalmente */
+  /*max-width: 70%;*/
 }
 
 #metadata {
