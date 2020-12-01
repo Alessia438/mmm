@@ -17,8 +17,8 @@ body {
 }
 
 /* attenzione coi margini: per alcuni elementi si sballa tutto, tipo i div. meglio padding*/
-a, img, p, h1, h2, h3, h4, h5, h6, hr, br {
-  margin: 15px;
+img, p, h1, h2, h3, h4, h5, h6, hr, br {
+  margin: 10px;
 }
 
 
@@ -37,7 +37,7 @@ a, img, p, h1, h2, h3, h4, h5, h6, hr, br {
 .topnav  a {
   display: inline-block;
   color: black;
-  padding: 7px 8px;
+  padding: 10px 12px;
   text-decoration: none;
   font-size: 17px;
   text-align: center;
@@ -565,7 +565,7 @@ Bottom right text
   display: inline-block;
   color: black;
   text-align: center;
-  padding: 7px 8px;
+  padding: 10px 12px;
   text-decoration: none;
   /* font-size: 17px; */
 }
@@ -586,7 +586,7 @@ Bottom right text
 
 .dropdown-content a {
   color: black;
-  padding: 6px 7px;
+  padding: 10px 12px;
   text-decoration: none;
   display: block;
   text-align: left;
