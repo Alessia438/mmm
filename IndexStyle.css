@@ -615,6 +615,7 @@ Bottom right text
 #flex-container {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
 }
 
 /*#grid-container {
