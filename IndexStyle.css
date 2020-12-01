@@ -721,14 +721,14 @@ button#prev, button#next  {
 }
 
 #prev {
-  top: 50%;
+  top: 15px;
   z-index: 1;
   position: absolute;
   left: 2px;
 }
   
 #next {
-  top: 50%;
+  top: 15px;
   z-index: 1;
   position: absolute;
   right: 2px;
