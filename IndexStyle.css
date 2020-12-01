@@ -612,19 +612,19 @@ Bottom right text
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 /* @media (min-width: 768px) */
 #content {
   position: relative;
   padding-left: 10px;
-  flex: 0 0 70%;
-  max-width: 70%;
+  flex: 0 0 65%;
+  max-width: 65%;
 }
 
 #metadata {
-  position: relative;  
-  padding-left: 10px;
+  position: relative;
   overflow: scroll;
   flex: 0 0 30%;
   max-width: 30%;
