@@ -471,17 +471,21 @@ body {
       margin-right: 0em;
       }
 
-      .footer {
-    text-align: justify;
-    text-align: center;
-    font-size: small;
-    padding: 1em;
-    background: rgba(38, 38, 38);
-    color: white;
-    margin-top: 0em;
-    margin-bottom: 0em;
-    margin-left: 0em;
-    margin-right: 0em;
+    .footer {
+      text-align: justify;
+      text-align: center;
+      font-size: small;
+      padding: 1em;
+      background: rgba(38, 38, 38);
+      color: white;
+      margin-top: 0em;
+      margin-bottom: 0em;
+      margin-left: 0em;
+      margin-right: 0em;
+      /* per fissarlo sotto
+      position: fixed;
+      left: 0;
+      bottom: 0; */
     }
     .footer a{text-decoration: none;}
     .footer a:link{color:white;}
