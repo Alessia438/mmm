@@ -638,16 +638,16 @@ Bottom right text
 #content {
   /*grid-area: main; */
   position: relative;
-  flex: 0 0 70%;
-  max-width: 70%;
+  /*flex: 0 0 70%;
+  max-width: 70%;*/
 }
 
 #metadata {
   /*grid-area: side;*/
   position: relative;
   overflow: scroll;
-  flex: 0 0 30%;
-  max-width: 30%;
+  /*flex: 0 0 30%;
+  max-width: 30%;*/
 }
 
 /*#top { grid-area: header;}
