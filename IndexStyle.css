@@ -556,7 +556,7 @@ Bottom right text
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #b3b3b3;
+  background-color: #bfbfbf;
   /* position: sticky;
   width: 100%; */
 }
@@ -582,7 +582,7 @@ Bottom right text
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #b3b3b3;
+  background-color: #bfbfbf;
   min-width: 160px;
   box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
