@@ -494,8 +494,6 @@ img, p, h1, h2, h3, h4, h5, h6, hr, br {
   margin-left: 0em;
   margin-right: 0em;
   /* per fissarlo sotto */
-  position: fixed;
-  left: 0;
   bottom: 0;
 }
 .footer a{text-decoration: none;}
