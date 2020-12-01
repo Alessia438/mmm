@@ -57,36 +57,45 @@ function changeCSS(cssFile, cssLinkIndex) {
 
 
 function changeIssue(issueN){
-	  /*  identificare l'issue da mostrare   */
-	if ('issue1' === issueN) {
+	/* if ('issue1' === issueN) {
 		var x = document.getElementById('issue1');
 		var y = document.getElementById('issue2');
 	} 
 	else {
 		var x = document.getElementById('issue2');
 		var y = document.getElementById('issue1');
-	}
-
-	  /*  azioni sull'issue da mostrare e quelli da non mostrare   */
-	var xChildren = x.children;     /*  i div che hanno class coverPage e articleN   */
-	var totLength = xChildren.length;     /* lunghezza della struttura dati dei figli di x  */
-	
-	x.style.display = "block";   /* issue da mostrare  */
-	xChildren[0].style.display = "block";   /* cover da mostrare  */
-	
-	y.style.display = "none";  /* issue da non mostrare  */
+	} 
+	// issue y da non mostrare
+	y.style.display = "none";
 	for (var i=0; i<y.children.length; i++) {
 		y.children[i].style.display = "none";
 	}
+	*/
+	var y = [];
+	for (var h=1; h<=3; h++){
+		if ('issue'+h === issueN){x = document.getElementById('issue'+h);}
+		else{y.push(h);}
+	}
+	//issue da nascondere
+	for (var num of y){
+		var curIssue = document.getElementById('issue'+num);
+		curIssue.style.display = "none"; 
+		for (var i=0; i<curIssue.children.length; i++) {curIssue.children[i].style.display = "none";}
+	}
+	//issue da mostrare
+	var xChildren = x.children;     /*  i div che hanno class coverPage e articleN   */
+	var totLength = xChildren.length;  
+	x.style.display = "block";   /* issue da mostrare  */
+	xChildren[0].style.display = "block";   /* cover da mostrare  */
 	
 	var oldArticles = document.getElementById("changeArguments").children;  /* per cambiare il contenuto delle funzioni onclick degli articoli  */
 	
 	for (var i=1; i<totLength; i++) {
-		xChildren[i].style.display = "none";    /* articoli da non mostrare  */
+		xChildren[i].style.display = "none";    // articoli da non mostrare  
 		
-		var newArticle = document.createElement("a");    /* creazione del nuovo tag  */
-		newArticle.setAttribute("class", "buttonArticle");   /* creazione del nuovo tag, set classe  */
-		newArticle.setAttribute("onclick", "changeArticle('article"  + i + "', '" + issueN + "')");   /* creazione del nuovo tag, set onclick attibute  */
+		var newArticle = document.createElement("a");    // creazione del nuovo tag 
+		newArticle.setAttribute("class", "buttonArticle");   // creazione del nuovo tag, set classe
+		newArticle.setAttribute("onclick", "changeArticle('article"  + i + "', '" + issueN + "')");   // creazione del nuovo tag, set onclick attibute
 
 		var myFrame = xChildren[i].children[0];
 		var myMeta = myFrame.contentWindow.document.head.getElementsByTagName("meta");
