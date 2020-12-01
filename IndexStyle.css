@@ -72,6 +72,7 @@ a, img, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 
 /* styling selector */
+/* styling vecchio, non usiamo più questi id 
 .articleMenu {
   list-style-type: none;
   overflow: hidden;
@@ -108,13 +109,13 @@ a, img, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 }
 
 
-/* @media screen and (max-width: 500px) {
+ @media screen and (max-width: 500px) {
       .articleMenu a {
       float: none;
       display: block;
     }
 }
- */ 
+ */
 
 /* end styling selector */ 
 
@@ -285,6 +286,7 @@ a, img, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
 
 
   /******* DIVS FOR ARTICLE PAGES *************************************************************************/
+/* styling vecchio, non usiamo più questi id 
 #selector{
   width: 60%;
   position: relative;
@@ -296,6 +298,7 @@ a, img, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   margin-left: 0px;
   left: 0;
 }
+
 
 #metadataViewer {
   width: 40%;
@@ -316,7 +319,7 @@ a, img, p, div, footer, h1, h2, h3, h4, h5, h6, hr, br {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
+*/
 
 /* adapting pictures */
 
