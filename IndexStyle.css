@@ -635,6 +635,7 @@ Bottom right text
 
 #metadata {
   position: relative;
+  height: 35.85em;
   overflow: scroll;
   flex: 0 0 30%;
   max-width: 30%;
