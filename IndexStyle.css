@@ -735,35 +735,11 @@ button#prev, button#next  {
 
 
 
-
-
-
-
-
-
-
-
 .article {
   /* padding necessario per i bottoni prev e next */
   padding-left: 30px;
   padding-right: 32px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -777,3 +753,28 @@ span[onclick] {cursor:pointer;}
   margin: 8px;
   display: inline-block;
 }
+
+#listIssue1, #listIssue2, #listIssue3 {width: 400px;}
+
+#listIssue1 li, #listIssue2 li, #listIssue3 li {
+  font-size: 20px;
+  border: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  margin-bottom: 20px;
+}
+
+#listIssue1 li ul, #listIssue2 li ul, #listIssue3 li ul {
+  font-size: 16px;
+  list-style-type: none;
+  border: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  margin-bottom: 20px;
+}
+
+
+
+
