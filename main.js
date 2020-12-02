@@ -606,8 +606,8 @@ function sortCategory(list, searchKey) {
 }
 
 function showMetaContent(){
-	if (document.getElementById('contentToShow').style.display === none){document.getElementById('contentToShow').style.display = block;}
-	else{document.getElementById('contentToShow').style.display = none;}
+	if (document.getElementById('contentToShow').style.display === 'none'){document.getElementById('contentToShow').style.display = 'block';}
+	else{document.getElementById('contentToShow').style.display = 'none';}
 }
 
 /*
