@@ -57,20 +57,6 @@ function changeCSS(cssFile, cssLinkIndex) {
 
 
 function changeIssue(issueN){
-	/* if ('issue1' === issueN) {
-		var x = document.getElementById('issue1');
-		var y = document.getElementById('issue2');
-	} 
-	else {
-		var x = document.getElementById('issue2');
-		var y = document.getElementById('issue1');
-	} 
-	// issue y da non mostrare
-	y.style.display = "none";
-	for (var i=0; i<y.children.length; i++) {
-		y.children[i].style.display = "none";
-	}
-	*/
 	var y = [];
 	for (var h=1; h<=3; h++){
 		if ('issue'+h === issueN){x = document.getElementById('issue'+h);}
@@ -106,22 +92,12 @@ function changeIssue(issueN){
 			}
 		document.getElementById("changeArguments").replaceChild(newArticle, oldArticles[i-1]);
 	}	
-
-    /*	for (var n=1; n<totLength; n++) {
-		var newArticle = document.createElement("a");
-		newArticle.setAttribute("class", "buttonArticle");
-	    	newArticle.setAttribute("onclick", "changeArticle('article"  + n + "', '" + issueN + "')");
-		
-	    newArticle.innerHTML = 'article'+n;
-
-	    document.getElementById("changeArguments").replaceChild(newArticle, oldArticles[n-1]);
-    	}   */
-	
         var originButton = document.getElementById("Origin");
 	if (originButton.hasAttribute("href")) {
 		originButton.removeAttribute("href");
 	}
-	// mostrare solo la lista di metadati dell'issue in block
+	showMetaList(issueN); //da eliminare se la cosa non funziona
+	/* 1 da ripristinare se le cose non vanno bene; mostrare solo la lista di metadati dell'issue in block
 	for (var m=1; m<document.getElementById('metadata').children.length; m++){
 		if (document.getElementById('metadata').children[m].id === "list"+issueN.charAt(0).toUpperCase()+issueN.slice(1)){
 			document.getElementById('metadata').children[m].style.display = "block";
@@ -129,7 +105,7 @@ function changeIssue(issueN){
 		else{
 			document.getElementById('metadata').children[m].style.display = "none";
 		}
-	}
+	} */
 }
 
 function getLinkOrigin(currentArticle, myOrigin) {
@@ -169,6 +145,19 @@ function changeArticleCover(articleNum, issueNum){
 	var c = window.parent.document.getElementById(issueNum).children;
 	var myOrigin = window.parent.document.getElementById("Origin");
 	changeArticleCommon(c, articleNum, myOrigin);
+	showMetaList(issueNum); //2 da eliminare se la cosa non funziona
+}
+
+// 3. da eliminare se non va bene
+function showMetaList(issueN){
+	for (var m=1; m<document.getElementById('metadata').children.length; m++){
+		if (document.getElementById('metadata').children[m].id === "list"+issueN.charAt(0).toUpperCase()+issueN.slice(1)){
+			document.getElementById('metadata').children[m].style.display = "block";
+		}
+		else{
+			document.getElementById('metadata').children[m].style.display = "none";
+		}
+	}
 }
 
 function prevArticle() {
