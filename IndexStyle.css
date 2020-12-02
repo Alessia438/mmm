@@ -490,7 +490,7 @@ img, p, h1, h2, h3, h4, h5, h6, hr, br {
   padding: 15px;
   background: rgba(38, 38, 38);
   color: white;
-  margin-top: auto; /* 0em;  or margin-top: -200px;*/
+  margin-top: -200px;  /* or 0em;  */
   margin-bottom: 0em;
   margin-left: 0em;
   margin-right: 0em;  /* modifiche per tenere sotto il footer */
