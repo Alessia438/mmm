@@ -786,7 +786,7 @@ span[onclick] {cursor:pointer;}
 
 li ul li{font-size: 15px;}
 
-a#sort, button#appearanceSort, button#frequencySort {
+button#sort, button#appearanceSort, button#frequencySort {
 	font-size: 12px;
 	letter-spacing: 2px;
 	padding: 13px 17px;
@@ -796,7 +796,7 @@ a#sort, button#appearanceSort, button#frequencySort {
 	background: transparent;
 }
 
-a#sort:hover, button#appearanceSort:hover, button#frequencySort:hover {
+button#sort:hover, button#appearanceSort:hover, button#frequencySort:hover {
   background-color:aquamarine;
   border-color: aquamarine;
   color: black;	
