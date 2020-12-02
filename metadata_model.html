@@ -289,8 +289,8 @@
 
 		    <div id="metadata">  <!-- div che contiene il metadata viewer -->
 				<div id="changeOrderBtns">
-					<p class="metadataText">METADATA VIEWER</p>
-					<p class="metadataText">Here you can find all the metadata of all the articles of the issue. You can jump from a metadata to the correspondent place in the article and vice versa.</p>
+					<p class="metadataText" onclick="showMetaContent()">METADATA VIEWER</p>
+					<p class="metadataText" id="contentToShow" style="display:none">Here you can find all the metadata of all the articles of the issue. You can jump from a metadata to the correspondent place in the article and vice versa.</p>
 					<p class="metadataText">Order your list by:</p>
 			    		<button id="sort" onclick="sortOccurrences('class')">Alphabet</button> <!-- bottone sort --> 
 					<button id="appearanceSort" onclick="sortOccurrences('data-position')">Appearance</button> <!-- bottone sort per ordine di comparsa --> 
