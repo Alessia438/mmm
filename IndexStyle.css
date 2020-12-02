@@ -783,4 +783,29 @@ span[onclick] {cursor:pointer;}
 
 li ul li{font-size: 15px;}
 
+#sort, #appearanceSort, #frequencySort {
+	font-size: 12px;
+	letter-spacing: 2px;
+	padding: 13px 17px;
+  border-color: #0088f;
+	color: #0088f;
+  border: 2px solid;
+	background: transparent;
+}
+
+#sort:hover, #appearanceSort:hover, #frequencySort:hover {
+  background-color:#0088f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
