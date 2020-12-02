@@ -22,7 +22,10 @@ body {
 img, p, h1, h2, h3, h4, h5, h6, hr, br {
   margin: 10px;
 }
-.metadataText{margin: 0px;}
+.metadataText{
+	margin: 0px;
+	padding
+}
 
 
 
@@ -783,7 +786,7 @@ span[onclick] {cursor:pointer;}
 
 li ul li{font-size: 15px;}
 
-#sort, #appearanceSort, #frequencySort {
+button #sort, button #appearanceSort, button#frequencySort {
 	font-size: 12px;
 	letter-spacing: 2px;
 	padding: 13px 17px;
@@ -793,7 +796,7 @@ li ul li{font-size: 15px;}
 	background: transparent;
 }
 
-#sort:hover, #appearanceSort:hover, #frequencySort:hover {
+button #sort:hover, button #appearanceSort:hover, button #frequencySort:hover {
   background-color:#0088f;
 }
 
