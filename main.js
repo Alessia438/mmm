@@ -150,7 +150,7 @@ function changeArticleCover(articleNum, issueNum){
 
 // 3. da eliminare se non va bene
 function showMetaList(string, issueN){
-	if string === 'changeArticleCover'{var strToParse = window.parent.document.getElementById('metadata');}
+	if (string === 'changeArticleCover'){var strToParse = window.parent.document.getElementById('metadata');}
 	else {var strToParse = document.getElementById('metadata');}
 	for (var m=1; m<strToParse.length; m++){
 		if (strToParse[m].id === "list"+issueN.charAt(0).toUpperCase()+issueN.slice(1)){strToParse[m].style.display = "block";}
