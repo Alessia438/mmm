@@ -605,6 +605,11 @@ function sortCategory(list, searchKey) {
   }
 }
 
+function showMetaContent(){
+	if (document.getElementById('contentToShow').style.display === none){document.getElementById('contentToShow').style.display = block;}
+	else{document.getElementById('contentToShow').style.display = none;}
+}
+
 /*
 function removeHighligth(iFrameN){
 	var isOnView = document.getElementById(iFrameN).contentWindow.document.getElementsByName("onView");
