@@ -761,12 +761,12 @@ span[onclick] {cursor:pointer;}
 }
 
 #listIssue1>li, #listIssue2>li, #listIssue3>li {
-  font-size: 20px;
+  font-size: 17px;
   border: 2px solid black;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   /*padding-left: 5px;*/
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   text-align: center;
 }
 
