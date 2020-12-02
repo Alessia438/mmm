@@ -790,14 +790,17 @@ a#sort, button#appearanceSort, button#frequencySort {
 	font-size: 12px;
 	letter-spacing: 2px;
 	padding: 13px 17px;
-  border-color: #0088f;
-	color: #0088f;
+  border-color: aquamarine;
+	color: aquamarine;
   border: 2px solid;
 	background: transparent;
 }
 
 a#sort:hover, button#appearanceSort:hover, button#frequencySort:hover {
-  background-color:#0088f;
+  background-color:aquamarine;
+  border-color: aquamarine;
+  color: black;	
+  font-weight:bold;
 }
 
 
