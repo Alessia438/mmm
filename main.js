@@ -396,9 +396,12 @@ function goToMetadata(curListId, instanceId){
 	var e = window.parent.document.getElementById(curListId).getElementsByClassName(instanceId)[0];
 	e.style.display = 'block';
 	var f = e.children;
-	for (var g of f){
-		g.style.display = 'block';
+	f[0].style.display = 'inline-block;'
+	for (var g=1; g<f.length; g++){
+		f[g].style.display = 'block';
 	}
+	e.style.backgroundColor = "#FFDAB9";
+	e.scrollIntoView(true);
 }
 //attribuisci effetto di hover da specificare nel css tipo con un background color 
 
