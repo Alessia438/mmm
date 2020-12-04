@@ -403,6 +403,44 @@ function goToMetadata(curListId, instanceId){
 	}
 	e.style.backgroundColor = "#FFDAB9";
 	e.scrollIntoView(true);
+
+	// animazione scomparsa colore background dopo 10 secondi:
+	var backgroundAnimation = window.parent.document.createElement('style'); // può andare in contrsto con la funzione che cambia lo stile dell'articolo?
+    backgroundAnimation.type = 'text/css';
+
+	var keyFramePrefixes = ["-webkit-", "-o-", "-moz-", ""];
+	var keyFrames = [];
+	var textNode = null;
+
+	for (var i in keyFramePrefixes) {
+		keyFrames = '@'+keyFramePrefixes[i]+'keyframes background-fade {'+
+		'80% { background-color: #FFDAB9; }'+
+		'100% { background-color: transparent; }'+
+		'}';
+		var rules = window.parent.document.createTextNode(keyFrames);
+	}
+
+	backgroundAnimation.appendChild(rules);
+
+	window.parent.document.getElementsByTagName("head")[0].appendChild(backgroundAnimation);
+
+	e.style.animation = 'background-fade 10s forwards';
+	e.style.WebkitAnimation = 'background-fade 10s forwards';
+    e.style.OAnimation = 'background-fade 10s forwards';
+    e.style.MozAnimation = 'background-fade 10s forwards';
+
+
+    setTimeout(function() {
+    	e.style.backgroundColor = 'transparent';
+    	e.style.WebkitAnimationName = '';
+    	e.style.animation = '';
+        e.style.OAnimation = '';
+        e.style.MozAnimation = '';
+        window.parent.document.getElementsByTagName("head")[0].removeChild(backgroundAnimation);
+    	}, 10000); // we have to reset the name of animation otherwise another call to background-fade wont have any effect
+	
+     event.stopPropagation();
+
 }
 //attribuisci effetto di hover da specificare nel css tipo con un background color 
 
