@@ -185,8 +185,9 @@ function nextArticle() {
 	}
 }
 
-function metadataViewer () {  // ricordarsi di lowercase e altre cose di scrittura + separare 1. più classi in una 2. più tag innestati + funzioni block/hide sulle singole liste
 
+//function metadataViewer () {  // ricordarsi di lowercase e altre cose di scrittura + separare 1. più classi in una 2. più tag innestati + funzioni block/hide sulle singole liste
+window.addEventListener("load", function(){
 	// enter each issue 
 	var elements = document.getElementById('content').children;
 	
@@ -308,8 +309,8 @@ function metadataViewer () {  // ricordarsi di lowercase e altre cose di scrittu
 
 		}
 	}
-
-}
+//}
+});
 
 function createCategoryLi(category, myList) {
 	var newLi = document.createElement('li');
